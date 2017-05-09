@@ -1,0 +1,1082 @@
+﻿
+ 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb" dir="ltr" >
+<head> 
+      <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="keywords" content="webcam, big bay, altantic surf co, wes coast webcam" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Spike at Wavescape" />
+  <meta name="google-site-verification" content="ABQIAAAAptZ5IE4P4bwmR0k2BKwi9hSYh6j9GENOHsH_N28F-i0Qmn3pzhR9MBkGKZA93u5MqvOCUqJQMlsovA" />
+  <meta name="description" content="This Big Bay webcam belongs to Atlantic Surfco. and is hosted by the Big Bay Surf lifesaving club. Images are updated at a 5 minute interval and refreshed in the browser every 3 minutes. " />
+  <meta name="generator" content="JOOMLA" />
+  <title>Big Bay - Tools - Webcams</title>
+  <link href="/templates/wavescape_4/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+  <link href="https://www.wavescape.co.za/index.php?option=com_search&amp;catid=70&amp;id=813&amp;view=article&amp;Itemid=6774&amp;format=opensearch" rel="search" title="Search " type="application/opensearchdescription+xml" />
+  <link rel="stylesheet" href="/components/com_jcomments/tpl/default/style.css?v=21" type="text/css" />
+  <link rel="stylesheet" href="https://www.wavescape.co.za/plugins/content/socialsharebuttons/style/style.css" type="text/css" />
+  <link rel="stylesheet" href="https://www.wavescape.co.za/plugins/content/webcam/style.css" type="text/css" />
+  <link rel="stylesheet" href="/plugins/system/jcemediabox/css/jcemediabox.css?1d12bb5a40100bbd1841bfc0e498ce7b" type="text/css" />
+  <link rel="stylesheet" href="/plugins/system/jcemediabox/themes/light/css/style.css?e1364f62202b1449bb25e6b12a4caa8d" type="text/css" />
+  <link rel="stylesheet" href="/modules/mod_sp_tweet/assets/css/mod_sp_tweet.default.css" type="text/css" />
+  <link rel="stylesheet" href="/media/system/css/modal.css" type="text/css" />
+  <link rel="stylesheet" href="/components/com_jnews/modules/css/default.css" type="text/css" />
+  <link rel="stylesheet" href="/modules/mod_lt_social_login/assets/css/mod_lt_social_login.css" type="text/css" />
+  <style type="text/css">
+
+  </style>
+  <script src="/components/com_jcomments/js/jcomments-v2.3.js?v=8" type="text/javascript"></script>
+  <script src="/components/com_jcomments/libraries/joomlatune/ajax.js?v=4" type="text/javascript"></script>
+  <script src="/media/system/js/mootools-core.js" type="text/javascript"></script>
+  <script src="/media/system/js/core.js" type="text/javascript"></script>
+  <script src="/media/system/js/caption.js" type="text/javascript"></script>
+  <script src="/plugins/system/jcemediabox/js/jcemediabox.js?0c56fee23edfcb9fbdfe257623c5280e" type="text/javascript"></script>
+  <script src="/media/system/js/modal.js" type="text/javascript"></script>
+  <script src="/modules/mod_lt_social_login/assets/js/script_paul.js" type="text/javascript"></script>
+  <script type="text/javascript">
+window.addEvent('load', function() {
+				new JCaption('img.caption');
+			});JCEMediaBox.init({popup:{width:"",height:"",legacy:0,lightbox:0,shadowbox:0,resize:0,icons:0,overlay:1,overlayopacity:0.6,overlaycolor:"#000000",fadespeed:500,scalespeed:500,hideobjects:1,scrolling:"scroll",close:2,labels:{'close':'Close','next':'Next','previous':'Previous','cancel':'Cancel','numbers':'{$current} of {$total}'},cookie_expiry:"",google_viewer:0},tooltip:{className:"tooltip",opacity:0.8,speed:150,position:"br",offsets:{x: 16, y: 16}},base:"/",imgpath:"plugins/system/jcemediabox/img",theme:"light",themecustom:"",themepath:"plugins/system/jcemediabox/themes",mediafallback:0,mediaselector:"audio,video"});function keepAlive() {	var myAjax = new Request({method: "get", url: "index.php"}).send();} window.addEvent("domready", function(){ keepAlive.periodical(3540000); });
+		window.addEvent('domready', function() {
+
+			SqueezeBox.initialize({});
+			SqueezeBox.assign($$('a.modal'), {
+				parse: 'rel'
+			});
+		});
+  </script>
+
+    <script type="text/javascript">
+    if((document.referrer.indexOf("www.baysider.com") != -1) && (window.self !== window.top))  {
+        window.location = "http://www.youtube.com/watch_popup?v=oHg5SJYRHA0";
+    }
+    if((document.referrer.indexOf("south-africa.focus.tv") != -1) && (window.self !== window.top))
+    {
+        window.location = "http://www.youtube.com/watch_popup?v=oHg5SJYRHA0";
+    }
+    if (window.self !== window.top) {
+    									window.location = "http://www.youtube.com/watch_popup?v=oHg5SJYRHA0";
+    								}
+    
+</script>
+
+<!-- BEGIN EFFECTIVE MEASURE CODE -->
+<!-- COPYRIGHT EFFECTIVE MEASURE -->
+<script type="text/javascript">
+ (function() {
+  var em = document.createElement('script'); em.type = 'text/javascript'; em.async = true;
+  em.src = ('https:' == document.location.protocol ? 'https://za-ssl' : 'http://za-cdn') + '.effectivemeasure.net/em.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(em, s);
+ })();
+</script>
+<noscript>
+ <img src="https://za.effectivemeasure.net/em_image" alt="" style="position:absolute; left:-5px;" />
+</noscript>
+<!--END EFFECTIVE MEASURE CODE -->
+
+	<script type="text/javascript" src="/ads/openx-2.8.7/www/delivery/spcjs.php?id=1&amp;target=_blank"></script>
+    <script type="text/javascript" src="/templates/wavescape_4/js/functions.js"></script>
+
+        <link rel="stylesheet" href="/templates/system/css/general.css" type="text/css" />
+    <link rel="stylesheet" href="/templates/system/css/system.css" type="text/css" />
+    		<link rel="stylesheet" href="/templates/wavescape_4/css/default.css?x" type="text/css" />
+                <link rel="stylesheet" href="/templates/wavescape_4/css/template.css" type="text/css" />
+	    <link rel="stylesheet" href="/templates/wavescape_4/css/fonts/fonts.css" type="text/css" />
+        <!--[if lte IE 8]>
+  	<style type="text/css">
+  	#wrapper { behavior: url(/templates/wavescape_4/pie.htc) }
+  	</style>
+  	<![endif]-->
+
+
+
+</head>
+<body>
+			<div id="sleeves" class="sleeves">
+					<div class="moduletable">
+					
+
+<div class="custom"  >
+	<script type="text/javascript">// <![CDATA[
+var m3_u = (location.protocol=='https:'?'https://wavescape.co.za/ads/openx-2.8.7/www/delivery/ajs.php':'http://ads.wavescape.co.za/openx-2.8.7/www/delivery/ajs.php');
+   var m3_r = Math.floor(Math.random()*99999999999);
+   if (!document.MAX_used) document.MAX_used = ',';
+   document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+   document.write ("?zoneid=23");
+   document.write ('&cb=' + m3_r);
+   if (document.MAX_used != ',') document.write ("&exclude=" + document.MAX_used);
+   document.write (document.charset ? '&charset='+document.charset : (document.characterSet ? '&charset='+document.characterSet : ''));
+   document.write ("&loc=" + escape(window.location));
+   if (document.referrer) document.write ("&referer=" + escape(document.referrer));
+   if (document.context) document.write ("&context=" + escape(document.context));
+   if (document.mmm_fo) document.write ("&mmm_fo=1");
+   document.write ("'><\/scr"+"ipt>");
+// ]]></script>
+
+<noscript><a href="/ads/openx-2.8.7/www/delivery/ck.php?n=a65ae05a&amp;cb=INSERT_RANDOM_NUMBER_HERE" target="_blank"><img src="/ads/openx-2.8.7/www/delivery/avw.php?zoneid=23&amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;n=a65ae05a" alt="" border="0" /></a></noscript></div>		</div>
+	
+			</div>
+			<div id="wrapper">
+       	<div id="top-modules">
+	<div id="topleft" style = "position:absolute;left:15px;">
+	    </div>
+		<div class="inner">
+		   <div id="narrow_login" >
+		   
+		   </div>
+		   <div id="fb_login" >
+		   		<div class="moduletable">
+					<style>
+    .ap-login #ap-login {
+        background:url('https://www.wavescape.co.za/modules/mod_lt_social_login/assets/buttons/blue_b.png')!important;
+    }
+    .ap-login-left #ap-login{
+        background:url('https://www.wavescape.co.za/modules/mod_lt_social_login/assets/buttons/leftb/l_blue_b.png')!important;
+    }
+</style>
+<style>
+    #ltPopupLogin{
+        width:45%;
+    }
+    .ap-login #ap-login{
+        top:200px!important;
+    }
+</style>
+ <p id="paul_login" style="text-align:right; padding-right:10px;"> <a title="Login" href="javascript:void(0)" class="login" id="ap-login">Login | Register</a>
+	<a href="//wavescape.co.za/index.php?tmpl=component&option=com_jnews&act=module&modid=50276" 
+class="modal" rel="{size: {x: 300, y: 280}, handler:'iframe'}" 
+id="modalLink1">
+ | Get surf report</a>
+</p>	
+<div id="lt-multiple-sociallogin">
+    <div id="ltPopupLogin">
+        <div class="ltPopupWrap">
+            <div id="loginForm">
+                <h3>
+                    Login                    <small>
+                        or                        <a href="/users/registration.html">
+                            Register                        </a>
+                    </small>
+                </h3>
+                <div class="clear overflow">
+                    <div id="ltlogin">
+                                                        <a href="https://www.facebook.com/dialog/oauth?client_id=528355677182180&redirect_uri=https%3A%2F%2Fwww.wavescape.co.za%2Ftools%2Fwebcams%2Fbig-bay.html&state=5ff65d842b5314bc19b0fc34a13d523f&scope=email%2Cpublish_stream" title="Log in with Facebook"><span id="facebook-auth">Log in with Facebook</span></a>
+                                                                                                                                                                                                                        </div>
+
+                                        <form action="/tools/webcams/big-bay.html" method="post" id="login-form">
+                                                        <fieldset class="userdata">
+                            <p id="form-login-username">
+                                    <label for="modlgn-username">User Name</label>
+                                    <input id="modlgn-username" type="text" name="username" class="inputbox"  size="18" />
+                            </p>
+                            <p id="form-login-password">
+                                    <label for="modlgn-passwd">Password</label>
+                                    <input id="modlgn-passwd" type="password" name="password" class="inputbox" size="18"  />
+                            </p>
+                                                        <p id="form-login-remember">
+                                    <label for="modlgn-remember">Remember Me</label>
+                                    <input id="modlgn-remember" type="checkbox" name="remember" class="inputbox" value="yes"/>
+                            </p>
+                                                        <div id="form-login-buttons">
+                                <input type="submit" name="Submit" class="button" value="Log in" />
+                            </div>
+                            <input type="hidden" name="option" value="com_users" />
+                            <input type="hidden" name="task" value="user.login" />
+                            <input type="hidden" name="return" value="aW5kZXgucGhwP29wdGlvbj1jb21fYWNjdGV4cCZ2aWV3PXVzZXImbGF5b3V0PXN1YnNjcmlwdGlvbmRldGFpbHMmSXRlbWlkPTY4NTA=" />
+                            <input type="hidden" name="78b8969d2e12f04bf1b2a1c8e158d875" value="1" />                            </fieldset>
+                            <ul>
+                                    <li>
+                                            <a href="/users/forgot-password.html">
+                                            Forgot your password?</a>
+                                    </li>
+                                    <li>
+                                            <a href="/users/forgot-username.html">
+                                            Forgot your username?</a>
+                                    </li>
+                            </ul>
+                                                </form>
+                                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+		</div>
+	
+		   </div>
+		  <div class="clear"></div>
+		   <div id="top_mods">
+						<div id="banner" class="flexiblemodule demi ">
+				<div class="inner">
+							<div class="moduletable_banner_header hidemobile3">
+					
+
+<div class="custom_banner_header hidemobile3"  >
+	<p>
+<script type="text/javascript">// <![CDATA[
+var m3_u = (location.protocol=='https:'?'https://wavescape.co.za/ads/openx-2.8.7/www/delivery/ajs.php':'http://ads.wavescape.co.za/openx-2.8.7/www/delivery/ajs.php');
+   var m3_r = Math.floor(Math.random()*99999999999);
+   if (!document.MAX_used) document.MAX_used = ',';
+   document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+   document.write ("?zoneid=1");
+   document.write ('&cb=' + m3_r);
+   if (document.MAX_used != ',') document.write ("&exclude=" + document.MAX_used);
+   document.write (document.charset ? '&charset='+document.charset : (document.characterSet ? '&charset='+document.characterSet : ''));
+   document.write ("&loc=" + escape(window.location));
+   if (document.referrer) document.write ("&referer=" + escape(document.referrer));
+   if (document.context) document.write ("&context=" + escape(document.context));
+   if (document.mmm_fo) document.write ("&mmm_fo=1");
+   document.write ("'><\/scr"+"ipt>");
+// ]]></script>
+</p>
+<noscript><a href="/ads/openx-2.8.7/www/delivery/ck.php?n=a5c9e331&amp;cb=INSERT_RANDOM_NUMBER_HERE" target="_blank"><img src="/ads/openx-2.8.7/www/delivery/avw.php?zoneid=1&amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;n=a5c9e331" alt="" border="0" /></a></noscript></div>		</div>
+	
+				</div>
+			</div>
+						<div id="subscribe" class="flexiblemodule demi ">
+			          <div class="inner">
+							<div class="moduletable hidemobile3">
+					
+
+<div class="custom hidemobile3"  >
+	<img style="margin-top: 20px;" src="/images/logo-teal.png" alt="Wavescape - Surfing in South Africa" width="227" height="71" /></div>		</div>
+	
+				  </div>
+			</div>
+		   </div>
+		<div id="navigation">
+		<ul class = "menu -home" >
+                    <li class="item101" >
+                        <a  href="/index.html"  >
+                    <span class="menuitem">Home</span>
+                </a>
+                                </li>
+                    </ul><ul class = "menu" >
+                    <li class="item112 parent" >
+                        <a  href="/surf-reports/wavescape-ocean-watch.html"  >
+                    <span class="menuitem">Forecast</span>
+                </a>
+                                <ul>
+                                        <li class="item123" >
+                        <a  href="/surf-reports/wavescape-ocean-watch/namaqualand.html"  >
+                    <span class="menuitem">Namaqualand</span>
+                </a>
+                                </li>
+                                        <li class="item122" >
+                        <a  href="/surf-reports/wavescape-ocean-watch/west-coast.html"  >
+                    <span class="menuitem">West Coast</span>
+                </a>
+                                </li>
+                                        <li class="item121" >
+                        <a  href="/surf-reports/wavescape-ocean-watch/cape-peninsula.html"  >
+                    <span class="menuitem">Cape Peninsula</span>
+                </a>
+                                </li>
+                                        <li class="item120" >
+                        <a  href="/surf-reports/wavescape-ocean-watch/southern-cape.html"  >
+                    <span class="menuitem">Southern Cape</span>
+                </a>
+                                </li>
+                                        <li class="item119" >
+                        <a  href="/surf-reports/wavescape-ocean-watch/eastern-cape-west.html"  >
+                    <span class="menuitem">Eastern Cape West</span>
+                </a>
+                                </li>
+                                        <li class="item118" >
+                        <a  href="/surf-reports/wavescape-ocean-watch/eastern-cape-east.html"  >
+                    <span class="menuitem">Eastern Cape East</span>
+                </a>
+                                </li>
+                                        <li class="item117" >
+                        <a  href="/surf-reports/wavescape-ocean-watch/wild-coast.html"  >
+                    <span class="menuitem">Wild Coast</span>
+                </a>
+                                </li>
+                                        <li class="item125" >
+                        <a  href="/surf-reports/wavescape-ocean-watch/kzn-south-coast.html"  >
+                    <span class="menuitem">KZN South Coast</span>
+                </a>
+                                </li>
+                                        <li class="item126" >
+                        <a  href="/surf-reports/wavescape-ocean-watch/durban.html"  >
+                    <span class="menuitem">Durban</span>
+                </a>
+                                </li>
+                                        <li class="item124" >
+                        <a  href="/surf-reports/wavescape-ocean-watch/kzn-far-north-coast.html"  >
+                    <span class="menuitem">KZN North Coast</span>
+                </a>
+                                </li>
+                                </ul>
+                    </li>
+                    </ul><ul class = "menu" >
+                    <li class="item524 parent" >
+                        <a  href="/tools/animated-swell-and-wind-charts.html"  >
+                    <span class="menuitem">Tools</span>
+                </a>
+                                <ul>
+                                        <li class="item113" >
+                        <a  href="/tools/wavescape-sms.html"  >
+                    <span class="menuitem">Wavescape SMS</span>
+                </a>
+                                </li>
+                                        <li class="item499 parent" >
+                        <a  href="/tools/animated-swell-and-wind-charts/animated-charts.html"  >
+                    <span class="menuitem">Animated Charts</span>
+                </a>
+                                <ul>
+                                        <li class="item404" >
+                        <a  href="/tools/animated-swell-and-wind-charts/swell-height-and-direction.html"  >
+                    <span class="menuitem">Swell Height and Direction</span>
+                </a>
+                                </li>
+                                        <li class="item405" >
+                        <a  href="/tools/animated-swell-and-wind-charts/wind-speed-and-direction.html"  >
+                    <span class="menuitem">Wind Speed and Direction</span>
+                </a>
+                                </li>
+                                        <li class="item406" >
+                        <a  href="/tools/animated-swell-and-wind-charts/primary-swell-period.html"  >
+                    <span class="menuitem">Primary Swell Period</span>
+                </a>
+                                </li>
+                                </ul>
+                    </li>
+                                        <li class="item184 parent" >
+                        <a  href="/tools/forecasting-101/tips-and-tricks.html"  >
+                    <span class="menuitem">Tips and Tricks</span>
+                </a>
+                                <ul>
+                                        <li class="item288" >
+                        <a  href="/tools/forecasting-101/how-to-read-the-reports.html"  >
+                    <span class="menuitem">How to Read SMS Reports</span>
+                </a>
+                                </li>
+                                </ul>
+                    </li>
+                                </ul>
+                    </li>
+                    </ul><ul class = "menu" >
+                    <li class="item301 parent active" >
+                        <a  href="/tools/webcams.html"  >
+                    <span class="menuitem">Cam</span>
+                </a>
+                                <ul>
+                                        <li class="item6831" >
+                        <a  href="http://www.wavescape.co.za/users/registration.html"  >
+                    <span class="menuitem">SUBSCRIBE to LIVE STREAM</span>
+                </a>
+                                </li>
+                                        <li class="item6773" >
+                        <a  href="/tools/webcams/melkbosstrand.html"  >
+                    <span class="menuitem">Melkbos (Live Stream)</span>
+                </a>
+                                </li>
+                                        <li class="item6828" >
+                        <a  href="/tools/webcams/table-view.html"  >
+                    <span class="menuitem">Table View (Live Stream)</span>
+                </a>
+                                </li>
+                                        <li class="item6891" >
+                        <a  href="/tools/webcams/tablemountain-view.html"  >
+                    <span class="menuitem">Tablemountain View</span>
+                </a>
+                                </li>
+                                        <li class="item6774 active" id="current">
+                        <a  href="/tools/webcams/big-bay.html"  >
+                    <span class="menuitem">Big Bay </span>
+                </a>
+                                </li>
+                                        <li class="item6830" >
+                        <a  href="/tools/webcams/noordhoek.html"  >
+                    <span class="menuitem">Noordhoek Beach (Live Stream)</span>
+                </a>
+                                </li>
+                                        <li class="item6829" >
+                        <a  href="/tools/webcams/kommetjie.html"  >
+                    <span class="menuitem">Long Beach (Live Stream)</span>
+                </a>
+                                </li>
+                                        <li class="item6807" >
+                        <a  href="/tools/webcams/kommetjie-open-coast.html"  >
+                    <span class="menuitem">Kommetjie Coast (Live Stream)</span>
+                </a>
+                                </li>
+                                        <li class="item6776" >
+                        <a  href="/tools/webcams/kalk-bay.html"  >
+                    <span class="menuitem">Kalk Bay (Live Stream)</span>
+                </a>
+                                </li>
+                                        <li class="item6827" >
+                        <a  href="/tools/webcams/muizenberg.html"  >
+                    <span class="menuitem">Muizenberg Corner</span>
+                </a>
+                                </li>
+                                        <li class="item6826" >
+                        <a  href="/tools/webcams/muizenberg-2.html"  >
+                    <span class="menuitem">Muizenberg (Live Stream)</span>
+                </a>
+                                </li>
+                                        <li class="item6780" >
+                        <a  href="/tools/webcams/strand.html"  >
+                    <span class="menuitem">Strand (Live Stream)</span>
+                </a>
+                                </li>
+                                        <li class="item353" >
+                        <a  href="/tools/webcams/shelly-beach.html"  >
+                    <span class="menuitem">Shelly Beach</span>
+                </a>
+                                </li>
+                                        <li class="item734" >
+                        <a  href="/tools/webcams/south-coast-photo.html"  >
+                    <span class="menuitem">Scottburgh (daily photos)</span>
+                </a>
+                                </li>
+                                        <li class="item324" >
+                        <a  href="/tools/webcams/durban-beachfront.html"  >
+                    <span class="menuitem">Durban (Live Stream)</span>
+                </a>
+                                </li>
+                                </ul>
+                    </li>
+                    </ul><ul class = "menu" >
+                    <li class="item493" >
+                        <a  href="/surf-news/breaking-news.html"  >
+                    <span class="menuitem">News</span>
+                </a>
+                                </li>
+                    </ul><ul class = "menu" >
+                    <li class="item6845" >
+                        <a  href="/photos/featured-slideshows.html"  >
+                    <span class="menuitem">Photo</span>
+                </a>
+                                </li>
+                    </ul><ul class = "menu" >
+                    <li class="item514" >
+                        <a  href="/video/the-latest-clips.html"  >
+                    <span class="menuitem">Video</span>
+                </a>
+                                </li>
+                    </ul><ul class = "menu" >
+                    <li class="item6867 parent" >
+                        <a  href="/shortcuts-2015/information.html"  >
+                    <span class="menuitem">Shortcuts</span>
+                </a>
+                                <ul>
+                                        <li class="item6868" >
+                        <a  href="/shortcuts-2015/information.html"  >
+                    <span class="menuitem">Information</span>
+                </a>
+                                </li>
+                                        <li class="item6869" >
+                        <a  href="/shortcuts-2015/information/shortcuts-2015-entry-form.html"  >
+                    <span class="menuitem">Enter Shortcuts 2015</span>
+                </a>
+                                </li>
+                                        <li class="item6870" >
+                        <a  href="/shortcuts-2015/entries.html"  >
+                    <span class="menuitem">Entries 2015</span>
+                </a>
+                                </li>
+                                        <li class="item6871" >
+                        <a  href="/surf-news/breaking-news/winner-makes-the-cut.html"  >
+                    <span class="menuitem">2014 Winner&#039;s Film</span>
+                </a>
+                                </li>
+                                        <li class="item6872" >
+                        <a  href="/shortcuts-2015/entries-2014.html"  >
+                    <span class="menuitem">Entries 2014</span>
+                </a>
+                                </li>
+                                        <li class="item6873" >
+                        <a  href="/shortcuts-2015/entries-2013.html"  >
+                    <span class="menuitem">Entries 2013</span>
+                </a>
+                                </li>
+                                </ul>
+                    </li>
+                    </ul><ul class = "menu" >
+                    <li class="item264" >
+                        <a  href="http://www.wavescapefestival.com/"  >
+                    <span class="menuitem">Fest</span>
+                </a>
+                                </li>
+                    </ul><ul class = "menu" >
+                    <li class="item657" >
+                        <a  href="/blog.html"  >
+                    <span class="menuitem">Blog</span>
+                </a>
+                                </li>
+                    </ul><ul class = "menu" >
+                    <li class="item547 parent" >
+                        <a  href="/community/profile.html"  >
+                    <span class="menuitem">Community</span>
+                </a>
+                                <ul>
+                                        <li class="item6850" >
+                        <a  href="/subscriptiondetails/user.html"  >
+                    <span class="menuitem">Manage Subscriptions</span>
+                </a>
+                                </li>
+                                        <li class="item552 parent" >
+                        <a  href="/shapers-bay/shapers.html"  >
+                    <span class="menuitem">Shapers</span>
+                </a>
+                                <ul>
+                                        <li class="item998" >
+                        <a  href="/shapers-bay/shapers/safari-surfboards.html"  >
+                    <span class="menuitem">Safari and Spider</span>
+                </a>
+                                </li>
+                                        <li class="item553" >
+                        <a  href="/shapers-bay/shapers/clayton-nienaber.html"  >
+                    <span class="menuitem">Clayton</span>
+                </a>
+                                </li>
+                                        <li class="item554" >
+                        <a  href="/shapers-bay/shapers/dave-van-ginkel.html"  >
+                    <span class="menuitem">DVG</span>
+                </a>
+                                </li>
+                                        <li class="item555" >
+                        <a  href="/shapers-bay/shapers/firewire.html"  >
+                    <span class="menuitem">Firewire</span>
+                </a>
+                                </li>
+                                        <li class="item879" >
+                        <a  href="/shapers-bay/shapers/vudu-surfboards.html"  >
+                    <span class="menuitem">Vudu Surfboards</span>
+                </a>
+                                </li>
+                                        <li class="item880" >
+                        <a  href="/shapers-bay/shapers/evenflow.html"  >
+                    <span class="menuitem">Evenflow</span>
+                </a>
+                                </li>
+                                </ul>
+                    </li>
+                                        <li class="item114 parent" >
+                        <a  href="/spots/spots-by-region.html"  >
+                    <span class="menuitem">Spots</span>
+                </a>
+                                <ul>
+                                        <li class="item128" >
+                        <a  href="/spots/spots-by-region/introduction-to-sa-spots.html"  >
+                    <span class="menuitem">Introduction</span>
+                </a>
+                                </li>
+                                        <li class="item129" >
+                        <a  href="/spots/spots-by-region/namaqualand.html"  >
+                    <span class="menuitem">Namaqualand</span>
+                </a>
+                                </li>
+                                        <li class="item130" >
+                        <a  href="/spots/spots-by-region/west-coast.html"  >
+                    <span class="menuitem">West Coast</span>
+                </a>
+                                </li>
+                                        <li class="item132" >
+                        <a  href="/spots/spots-by-region/cape-peninsula-west.html"  >
+                    <span class="menuitem">Cape Pensinsula West</span>
+                </a>
+                                </li>
+                                        <li class="item133" >
+                        <a  href="/spots/spots-by-region/cape-peninsula-south.html"  >
+                    <span class="menuitem">Cape Pensinsula South</span>
+                </a>
+                                </li>
+                                        <li class="item134" >
+                        <a  href="/spots/spots-by-region/false-bay.html"  >
+                    <span class="menuitem">False Bay</span>
+                </a>
+                                </li>
+                                        <li class="item135" >
+                        <a  href="/spots/spots-by-region/overberg.html"  >
+                    <span class="menuitem">Overberg</span>
+                </a>
+                                </li>
+                                        <li class="item136" >
+                        <a  href="/spots/spots-by-region/garden-route.html"  >
+                    <span class="menuitem">Garden Route</span>
+                </a>
+                                </li>
+                                        <li class="item138" >
+                        <a  href="/spots/spots-by-region/wild-coast.html"  >
+                    <span class="menuitem">Wild Coast</span>
+                </a>
+                                </li>
+                                        <li class="item139" >
+                        <a  href="/spots/spots-by-region/kzn-south-coast.html"  >
+                    <span class="menuitem">KZN South Coast</span>
+                </a>
+                                </li>
+                                        <li class="item140" >
+                        <a  href="/spots/spots-by-region/durban.html"  >
+                    <span class="menuitem">Durban</span>
+                </a>
+                                </li>
+                                        <li class="item141" >
+                        <a  href="/spots/spots-by-region/kzn-north-coast.html"  >
+                    <span class="menuitem">KZN North Coast</span>
+                </a>
+                                </li>
+                                </ul>
+                    </li>
+                                        <li class="item181" >
+                        <a  href="/business-directory.html"  >
+                    <span class="menuitem">Surf Business Directory</span>
+                </a>
+                                </li>
+                                        <li class="item147 parent" >
+                        <a  href="/culture/surfrican-slang.html"  >
+                    <span class="menuitem">Surfrican Slang</span>
+                </a>
+                                <ul>
+                                        <li class="item148" >
+                        <a  href="/culture/surfrican-slang/introduction-to-surfrikan.html"  >
+                    <span class="menuitem">Introduction to the Glossary</span>
+                </a>
+                                </li>
+                                        <li class="item150" >
+                        <a  href="/culture/surfrican-slang/surfrikan-slang.html"  >
+                    <span class="menuitem">The Surfrikan Glossary</span>
+                </a>
+                                </li>
+                                        <li class="item149" >
+                        <a  href="/culture/surfrican-slang/letter-from-the-edge.html"  >
+                    <span class="menuitem">Letter from the Edge</span>
+                </a>
+                                </li>
+                                        <li class="item174" >
+                        <a  href="/culture/surfrican-slang/old-surfing-slang.html"  >
+                    <span class="menuitem">Glossary of Old Surfing Slang</span>
+                </a>
+                                </li>
+                                </ul>
+                    </li>
+                                </ul>
+                    </li>
+                                <li class="item6646" >
+                        <a  href="/tune-us.html"  >
+                    <span class="menuitem">Tune Us</span>
+                </a>
+                                </li>
+                    </ul><form action="/tools/webcams/big-bay.html" method="post">
+	<div class="search_search">
+		<input type="submit" value="»" class="button_search" onclick="this.form.searchword.focus();"/><input name="searchword" id="mod-search-searchword" maxlength="20"  class="inputbox_search" type="text" size="50" value="Search"  onblur="if (this.value=='') this.value='Search';" onfocus="if (this.value=='Search') this.value='';" />	<input type="hidden" name="task" value="search" />
+	<input type="hidden" name="option" value="com_search" />
+	<input type="hidden" name="Itemid" value="6723" />
+	</div>
+</form>
+
+
+<div class="custom socialMediaRight"  >
+	<div class="threeButtons">
+<table border="0" align="center">
+<tbody>
+<tr>
+<td><a href="http://www.twitter.com/WavescapeSA" title="Follow WavescapeSA on Twitter" target="_blank"><img src="/images/newtwitter.png" style="padding: 1px" alt="Follow Wavescape on Twitter" border="0" /></a></td>
+<td><a href="http://www.facebook.com/WavescapeSA" title="Follow Wavescape on Facebook" target="_blank"><img src="/images/newfb.png" style="padding: 1px" alt="newfb" /></a></td>
+<td><a href="http://www.wavescape.co.za/rss.html" title="Wavescape News for your RSS Reader" target="_blank"><img src="/images/newrss.png" style="padding: 1px" alt="Subscribe to the Wavescape Newsfeed" /></a></td>
+</tr>
+</tbody>
+</table>
+</div></div>
+	</div>
+			</div>
+	</div>
+	
+	
+	<div id="main">
+		<div id="midWrapper" class="column center " style="width:651px">
+			<div class="inner">
+			    
+			    
+<div id="system-message-container">
+</div>
+			    <div class="item-page">
+
+	<div class="contentHeading ">
+	<h1 class="pic1">
+			<a href="/tools/webcams/big-bay.html">
+		Big Bay</a>
+		</h1></div>
+ 
+<div class="socialMedia">
+	<ul class="actions">
+						<li class="print-icon">
+			<a href="/index.php?option=com_content&amp;view=article&amp;id=813:big-bay&amp;catid=70&amp;Itemid=6774&amp;tmpl=component&amp;print=1&amp;layout=default&amp;page=" title="Print" onclick="window.open(this.href,'win2','status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=no,resizable=yes,width=640,height=480,directories=no,location=no'); return false;" rel="nofollow"><img src="/templates/wavescape_4/images/system/printButton.png" alt="Print"  /></a>			</li>
+		
+					<li class="email-icon">
+			<a href="/index.php?option=com_mailto&amp;tmpl=component&amp;template=wavescape_4&amp;link=ef41e884c6e8f617e9e6403a53b8f3e67f983bba" title="Email" onclick="window.open(this.href,'win2','width=400,height=350,menubar=yes,resizable=yes'); return false;"><img src="/templates/wavescape_4/images/system/emailButton.png" alt="Email"  /></a>			</li>
+		
+		
+	
+	</ul>
+
+
+ 
+
+
+
+      
+  </div></div>
+<div class="articleText">
+
+<!-- Social Share Buttons  -->
+        <div class="social-share-buttons-share"><div class="social-share-buttons-share-fbl">
+                <fb:like 
+                href="http://www.wavescape.co.za/tools/webcams/big-bay.html" 
+                layout="button_count" 
+                show_faces="false" 
+                width="100" 
+                colorscheme="light"send="true" action="like" font="arial"></fb:like>
+                </div>
+                
+            <div class="social-share-buttons-share-tw">
+            <a href="http://twitter.com/share" class="twitter-share-button" data-url="https://www.wavescape.co.za/tools/webcams/big-bay.html" data-text="Big Bay" data-count="horizontal" data-via="WavescapeSA" data-lang="en">Tweet</a><script type="text/javascript" src="https://platform.twitter.com/widgets.js"></script>
+            </div>
+            
+            <div class="social-share-buttons-share-gone">
+            <!-- Place this tag in your head or just before your close body tag -->
+            <script type="text/javascript" src="//apis.google.com/js/plusone.js"> {lang: 'en'}</script>
+            <!-- Place this tag where you want the +1 button to render -->
+            <g:plusone size="medium" href="http://www.wavescape.co.za/tools/webcams/big-bay.html"></g:plusone>
+            </div>
+            
+            <div class="social-share-buttons-share-lin">
+            <script type="text/javascript" src="https://platform.linkedin.com/in.js"></script><script type="in/share" data-url="https://www.wavescape.co.za/tools/webcams/big-bay.html" data-counter="none"></script>
+            </div>
+            
+        </div>
+        <div style="clear:both;"></div>
+        <a class="framedLeftCol" rel="title[webcams bigbay-atlantic]" target="_blank"><img src="//www.wavescape.co.za/images/stories/webcams/webcams_bigbay-atlantic.jpg" alt="webcams bigbay-atlantic" width="180" height="135" /></a>
+<h3>Atlantic Surf Co</h3>
+<p class="intro">This stills webcam belongs to <a title="Support your local surf shop!" href="http://www.atlanticsurfco.co.za" target="_blank">Atlantic Surfco.</a> and is hosted by the Big Bay Surf lifesaving club. Images are updated at a 5 minute interval and refreshed in the browser every 3 minutes.</p>
+ 
+<div class="hr"><hr /></div>
+<p><div id="container"><a class="jcepopup noicon" href="http://www.wavescape.co.za/plugins/content/webcam/newfetch.php?pic=bigbay.jpg&amp;rnd=1080521176" rel="width[1280]" target="_blank"><img id="webcam" class="framedFullWidth" style="width: 580px; height: 400px;" src="#" alt="webcam" width="580px" height="400px" /></a></div><script src="//code.jquery.com/jquery-1.11.3.min.js" type="text/javascript"></script>
+				<script type="text/javascript">
+				jQuery(function(){
+    jQuery('#ajaxloader').show();
+	//jQuery('#webcam').fadeOut();
+	
+	jQuery('#webcam').attr('src', "https://www.wavescape.co.za/plugins/content/webcam/newfetch.php?pic=bigbay.jpg&rnd=1080521176").load(function() {
+              jQuery('#ajaxloader').delay(8000).fadeOut(); 
+              jQuery('#webcam').fadeIn();
+          }); 
+    setInterval(function(){
+	window.location.href=window.location.href;
+},300000);
+    
+});
+</script>
+</p>
+
+
+				<ul class="pagenav">
+					<li class="pagenav-prev">
+						<a href="/tools/webcams/south-coast-photo.html" rel="prev">&lt; Prev</a>
+					</li>
+					<li class="pagenav-next">
+						<a href="/tools/webcams/kommetjie.html" rel="next">Next &gt;</a>
+					</li>
+				</ul>
+	  </div>
+
+			<div id="bottom_tabs" class="tabs">
+			<div class="inner">
+				
+				
+								
+			</div>
+		</div>
+			</div>
+		</div>
+						<div id="rightcol" class="column column2 " style="width:321px">
+			<div class="inner">
+						<div class="moduletable-banner">
+					
+
+<div class="custom-banner"  >
+	<script type="text/javascript">// <![CDATA[
+var m3_u = (location.protocol=='https:'?'https://wavescape.co.za/ads/openx-2.8.7/www/delivery/ajs.php':'http://ads.wavescape.co.za/openx-2.8.7/www/delivery/ajs.php');
+   var m3_r = Math.floor(Math.random()*99999999999);
+   if (!document.MAX_used) document.MAX_used = ',';
+   document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+   document.write ("?zoneid=20");
+   document.write ('&cb=' + m3_r);
+   if (document.MAX_used != ',') document.write ("&exclude=" + document.MAX_used);
+   document.write (document.charset ? '&charset='+document.charset : (document.characterSet ? '&charset='+document.characterSet : ''));
+   document.write ("&loc=" + escape(window.location));
+   if (document.referrer) document.write ("&referer=" + escape(document.referrer));
+   if (document.context) document.write ("&context=" + escape(document.context));
+   if (document.mmm_fo) document.write ("&mmm_fo=1");
+   document.write ("'><\/scr"+"ipt>");
+// ]]></script>
+
+<noscript><a href="/ads/openx-2.8.7/www/delivery/ck.php?n=269de3e&amp;cb=INSERT_RANDOM_NUMBER_HERE" target="_blank"><img src="/ads/openx-2.8.7/www/delivery/avw.php?zoneid=20&amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;n=269de3e" alt="" border="0" /></a></noscript></div>		</div>
+			<div class="moduletable">
+					<script src="https://connect.facebook.net/en_GB/all.js#xfbml=1"></script><fb:fan profile_id="123387878367" width ="300" height="160" connections ="1" stream ="0" logobar="1" css="https://wavescape.co.za/templates/wavescape_4/css/likebox.css?2"></fb:fan> <noscript>JavaScript must be enabled in order for you to use the Nurte Facebook Like Box. However, it seems JavaScript is either disabled or not supported by your browser. To use the Nurte Facebook Like Box, enable JavaScript by changing your browser options, then <a href="https://www.wavescape.co.za/tools/webcams/big-bay.html">try again.</a></noscript>		</div>
+			<div class="moduletable-banner">
+					
+
+<div class="custom-banner"  >
+	<script type="text/javascript">// <![CDATA[
+var m3_u = (location.protocol=='https:'?'https://wavescape.co.za/ads/openx-2.8.7/www/delivery/ajs.php':'http://ads.wavescape.co.za/openx-2.8.7/www/delivery/ajs.php');
+   var m3_r = Math.floor(Math.random()*99999999999);
+   if (!document.MAX_used) document.MAX_used = ',';
+   document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+   document.write ("?zoneid=21");
+   document.write ('&cb=' + m3_r);
+   if (document.MAX_used != ',') document.write ("&exclude=" + document.MAX_used);
+   document.write (document.charset ? '&charset='+document.charset : (document.characterSet ? '&charset='+document.characterSet : ''));
+   document.write ("&loc=" + escape(window.location));
+   if (document.referrer) document.write ("&referer=" + escape(document.referrer));
+   if (document.context) document.write ("&context=" + escape(document.context));
+   if (document.mmm_fo) document.write ("&mmm_fo=1");
+   document.write ("'><\/scr"+"ipt>");
+// ]]></script>
+<noscript><a href="/ads/openx-2.8.7/www/delivery/ck.php?n=30f6faa&amp;cb=INSERT_RANDOM_NUMBER_HERE" target="_blank"><img src="/ads/openx-2.8.7/www/delivery/avw.php?zoneid=21&amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;n=30f6faa" alt="" border="0" /></a></noscript>
+</div>		</div>
+			<div class="moduletable">
+					<h3>Wavescape on Twitter</h3>
+					<div id="sp-tweet-id50401">
+<div class="sp-tweet">
+    		        <div class="sp-tweet-item sp-tweet-odd sp-tweet-first">
+		                                                <a target="_self" href="https://twitter.com/WavescapeSA">
+                        <img class="tweet-avatar" src="https://pbs.twimg.com/profile_images/479934529071611904/iEOHERGt_normal.png" alt="Wavescape" title="Wavescape" width="32" height="32" />
+                    </a>
+                    				
+                				
+
+															<div class="date"><a target="_self" href="https://twitter.com/WavescapeSA/status/861947886560583680">About&nbsp;3 hours&nbsp;ago</a></div>	
+							
+						
+													<br />
+								Some swell is headed for Durban, and the Cell C Goodwave surfing event is on standby while the charts try to se... <a target="_self" class="tweet_url" href="https://t.co/k7y7BXfpX2">https://t.co/k7y7BXfpX2</a>            <div class="sp-tweet-clr"></div>
+        </div>
+    		        <div class="sp-tweet-item sp-tweet-even">
+		                                                <a target="_self" href="https://twitter.com/WavescapeSA">
+                        <img class="tweet-avatar" src="https://pbs.twimg.com/profile_images/479934529071611904/iEOHERGt_normal.png" alt="Wavescape" title="Wavescape" width="32" height="32" />
+                    </a>
+                    				
+                				
+
+															<div class="date"><a target="_self" href="https://twitter.com/WavescapeSA/status/861501932011233280">About&nbsp;1 day&nbsp;ago</a></div>	
+							
+						
+													<br />
+								RT <a target="_self" class="tweet_mention" href="https://twitter.com/Greenpeace">@Greenpeace</a>: As the US steps back, why is China determined to be the global leader on  <a target="_self" class="tweet_search" href="https://search.twitter.com/search?q=climatechange">#climatechange</a>? <a target="_self" class="tweet_url" href="https://t.co/Oy480iLduS">https://t.co/Oy480iLduS</a> <a target="_self" class="tweet_url" href="https://t.…">https://t.…</a>            <div class="sp-tweet-clr"></div>
+        </div>
+    		        <div class="sp-tweet-item sp-tweet-odd">
+		                                                <a target="_self" href="https://twitter.com/WavescapeSA">
+                        <img class="tweet-avatar" src="https://pbs.twimg.com/profile_images/479934529071611904/iEOHERGt_normal.png" alt="Wavescape" title="Wavescape" width="32" height="32" />
+                    </a>
+                    				
+                				
+
+															<div class="date"><a target="_self" href="https://twitter.com/WavescapeSA/status/861500512243511296">About&nbsp;1 day&nbsp;ago</a></div>	
+							
+						
+													<br />
+								In this little movie, find a smooth ride over the kelp with the fin-less Hot Curl, an old-school all-round surf... <a target="_self" class="tweet_url" href="https://t.co/qtKU6OSmaA">https://t.co/qtKU6OSmaA</a>            <div class="sp-tweet-clr"></div>
+        </div>
+    		        <div class="sp-tweet-item sp-tweet-even">
+		                                                <a target="_self" href="https://twitter.com/WavescapeSA">
+                        <img class="tweet-avatar" src="https://pbs.twimg.com/profile_images/479934529071611904/iEOHERGt_normal.png" alt="Wavescape" title="Wavescape" width="32" height="32" />
+                    </a>
+                    				
+                				
+
+															<div class="date"><a target="_self" href="https://twitter.com/WavescapeSA/status/861495805005443072">About&nbsp;1 day&nbsp;ago</a></div>	
+							
+						
+													<br />
+								A new tidal wave has been found in Myanmar, according to veteran surf explorer and Stormrider guide author Anto... <a target="_self" class="tweet_url" href="https://t.co/h98nLcEP5s">https://t.co/h98nLcEP5s</a>            <div class="sp-tweet-clr"></div>
+        </div>
+    </div>
+<div class="sp-tweet-clr"></div> 
+<div class="sp-tweet-clr"></div></div>		</div>
+			<div class="moduletable-banner">
+					
+
+<div class="custom-banner"  >
+	<script type="text/javascript">// <![CDATA[
+var m3_u = (location.protocol=='https:'?'https://wavescape.co.za/ads/openx-2.8.7/www/delivery/ajs.php':'http://ads.wavescape.co.za/openx-2.8.7/www/delivery/ajs.php');
+   var m3_r = Math.floor(Math.random()*99999999999);
+   if (!document.MAX_used) document.MAX_used = ',';
+   document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+   document.write ("?zoneid=22");
+   document.write ('&cb=' + m3_r);
+   if (document.MAX_used != ',') document.write ("&exclude=" + document.MAX_used);
+   document.write (document.charset ? '&charset='+document.charset : (document.characterSet ? '&charset='+document.characterSet : ''));
+   document.write ("&loc=" + escape(window.location));
+   if (document.referrer) document.write ("&referer=" + escape(document.referrer));
+   if (document.context) document.write ("&context=" + escape(document.context));
+   if (document.mmm_fo) document.write ("&mmm_fo=1");
+   document.write ("'><\/scr"+"ipt>");
+// ]]></script>
+<noscript><a href="/ads/openx-2.8.7/www/delivery/ck.php?n=91026ea&amp;cb=INSERT_RANDOM_NUMBER_HERE" target="_blank"><img src="/ads/openx-2.8.7/www/delivery/avw.php?zoneid=22&amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;n=91026ea" alt="" border="0" /></a></noscript>
+</div>		</div>
+	
+			</div>
+		</div>
+				<div class="clr"></div>
+	</div>
+
+	
+		<div id="partners">
+				<div class="moduletable">
+					
+
+<div class="custom"  >
+	<p><img style="display: block; margin-left: auto; margin-right: auto;" src="//www.wavescape.co.za/images/stories/partners/partners2.gif" alt="Wavescape friends and partners" usemap="#map" border="0" /> <map name="map"> 
+<area shape="rect" coords="21,89,167,172" href="http://www.wesgro.co.za/" alt="Isiqalo Foundation" target="_blank" />
+ 
+<area shape="rect" coords="298,113,454,168" href="http://www.cca.ukzn.ac.za/" alt="DIFF" target="_blank" />
+ 
+<area shape="rect" coords="805,8,893,58" href="http://www.csir.co.za" alt="CSIR" target="_blank" />
+ 
+<area shape="rect" coords="196,69,276,174" href="http://www.wwfsassi.co.za" alt="Isiqalo Foundation" target="_blank" />
+ 
+<area shape="rect" coords="27,15,140,72" href="http://www.surfingsouthafrica.co.za/" alt="Surfing  South Africa" target="_blank" />
+ 
+<area shape="rect" coords="158,14,324,59" href="http://saveourseas.com/projects/sharkcentre_za" alt="Save Our Seas Shark Centre" target="_blank" />
+ 
+<area shape="rect" coords="716,-4,796,101" href="http://www.isiqalo.org" alt="Isiqalo Foundation" target="_blank" />
+ 
+<area shape="rect" coords="525,9,690,85" href="http://www.redbullmediahouse.com" alt="Red Bull Media House" target="_blank" />
+ 
+<area shape="rect" coords="345,37,501,92" href="http://www.cca.ukzn.ac.za/" alt="DIFF" target="_blank" />
+ 
+<area shape="rect" coords="636,105,789,165" href="http://www.nsri.org.za/" alt="National Sea Rescue Institute" target="_blank" />
+ 
+<area shape="rect" coords="465,113,622,166" href="http://www.sharkspotters.org.za/" alt="Shark Spotters" target="_blank" />
+ 
+<area shape="rect" coords="803,75,897,169" href="http://www.worldsurfleague.com/" alt="ASP Africa" target="_blank" />
+ </map></p></div>		</div>
+	
+	</div>
+	<div class="clr"></div>
+	
+		<div id="footer">
+		
+<ul class="menu">
+<li class="item-507"><a href="/about-us.html" >About Us</a></li><li class="item-508"><a href="/sitemap.html" >Sitemap</a></li><li class="item-509"><a href="/advertiser-enquiries.html" >Advertiser Enquiries</a></li><li class="item-510"><a href="/small-print.html" >Small Print</a></li><li class="item-6892"><a href="/wavescape-privacy-policy.html" >Privacy Policy</a></li></ul>
+
+
+<div class="custom"  >
+	<p><span style="font-size: 8pt;">Wavescape Mk IV - Developed by <a title="Kalemanzi Media Solutions - custom web development" href="http://www.kalemanzi.com" target="_blank">Kalemanzi Media Solutions</a></span></p></div>
+	</div>
+	<div class="clr"></div>
+	
+
+</div>
+
+
+<script type="text/javascript">
+
+onload=function() {
+
+var rightcolh = document.getElementById('rightcol').offsetHeight;
+var midcolh = document.getElementById('midWrapper').offsetHeight;
+     //alert(rightcolh +" px rightcol " + midcolh + " px midcol");
+     if (rightcolh > midcolh) {
+      var rightcol_element = document.getElementById("midWrapper");
+	rightcol_element.style.height = rightcolh - 3 +"px";
+     }
+     if (rightcolh < midcolh) {
+     var rightcol_element = document.getElementById("rightcol");
+	rightcol_element.style.height = midcolh - 3 +"px";
+     }
+     
+   }
+
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-3157690-10', 'auto');
+  ga('send', 'pageview');
+
+</script>
+			 	<script type="text/javascript">
+	                 
+					  function addTag()
+						{ if (typeof jQuery === 'function') { jQuery.noConflict();}
+							var tag = $('ttnewtag').get('value');
+					 		var url = 'https://www.wavescape.co.za/index.php?option=com_tortags&task=addtag&tmpl=component&format=raw&tag='+ tag +'&id=813&comp=com_content';
+							var a = new Request.HTML({
+							         url: url,
+							         method: 'post',
+							         update   : $('tt-value'),
+							         onRequest: function(){
+	        							$('tt-status').set('text', 'loading...');
+	    							},
+							         onComplete:  function(response) 
+							            {
+							            	var result = $('tt-value').get('text');
+							            	var mess = '';
+							            	
+							            	if (result==-1)
+							            	{
+							            		mess ="<span class='tt_error'> Error: empty or wrong parameters </span>";
+							            	}else
+							            	if (result=='-2')
+							            	{
+							            		mess ="<span class='tt_notice'>Notice: This tag is already exist </span>";
+							            	}else
+							            	if (result=='-3')
+							            	{
+							            		mess ="<span class='tt_error'>Error: Insert DB error </span>";
+							            	}
+							            	else
+							            	{
+							            		mess ="<span class='tt_success'> Successfully added </span>";
+							            		var button = '<div id="tagid_'+ result +'" class="tt_button"><div class="tt_end"><span class="tt-2gtr"><a class="tt-del-link" href="javascript:void(0);" onclick="javascript:delTag('+ result +');"><img src="https://www.wavescape.co.za/components/com_tortags/assets/images/delete.png"/></a><span style="font-weight: normal;">'+ tag +'</span></span></div></div>';
+							            		$('tt-tags').set('html', $('tt-tags').get('html') + button);
+							            	}
+							            	
+							            	$('tt-status').set('html', mess);
+							            	$('ttnewtag').set('value','');
+							            	$('ttnewtag').focus();
+	
+							            }
+							        }); 
+							a.send(); 
+						}
+						function delTag(id)
+						{if (typeof jQuery === 'function') { jQuery.noConflict();}
+					 		var url = 'https://www.wavescape.co.za/index.php?option=com_tortags&task=deltag&tmpl=component&format=raw&tag_id='+ id+'&id=813&comp=com_content';
+							var d = new Request.HTML({
+							         url: url,
+							         method: 'post',
+							         update   : $('tt-value'),
+							         onRequest: function(){
+	        							$('tt-status').set('text', 'loading...');
+	    							},
+							         onComplete:  function(response) 
+							            {	
+							            	var namefield = 'tagid_'+ id;
+							            	$(namefield).destroy();
+							            	var result = $('tt-value').get('text');
+							            	var mess = '';
+							            	
+							            	if (result==-1)
+							            	{
+							            		mess ="<span class='tt_error'> Error: empty or wrong parameters </span>";
+							            	}else
+							            	{
+							            		mess ="<span class='tt_success'> Successfully deleted </span>";
+							            	}
+							            	$('tt-status').set('html', mess);
+							            }
+							        }); 
+							d.send(); 
+						}
+	 			</script>
+			 	</body>
+</html>

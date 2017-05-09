@@ -1,0 +1,11 @@
+﻿GET http://www.wavescape.co.za/plugins/content/webcam/newfetch.php?pic=mb_gary.jpg&rnd=81827366&tmpl=component HTTP/1.1
+Host: www.wavescape.co.za
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Referer: http://www.wavescape.co.za/tools/webcams/muizenberg-2.html
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: en-US,en;q=0.8
+Cookie: dd_aidapage50367=0; _gat=1; dm_tabs_1=0; _em_t=true; _em_vt=ded469d54db91125b9347557474258b43758412791-135787325911e5f1; _em_v=33138ce17b7a69d844d0331f936f5911e42cbee071-292113835911e5f1; _ga=GA1.3.400437215.1488208292; _gid=GA1.3.1452849447.1494345204
+

@@ -1,0 +1,9 @@
+﻿GET http://www.bouml.fr/doc/figs/diagramstereotypes.png HTTP/1.1
+Host: www.bouml.fr
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Accept: image/webp,image/*,*/*;q=0.8
+Referer: http://www.bouml.fr/doc/statediagram.html
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: en-US,en;q=0.8
+
