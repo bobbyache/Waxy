@@ -10,7 +10,7 @@ using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using TcpGrabImage.UnitTests.Helpers;
-
+using System.Collections;
 
 namespace TcpGrabImage.UnitTests
 {
@@ -22,6 +22,14 @@ namespace TcpGrabImage.UnitTests
 * Then need template http request with key-value pairs for replacing params in the order declared in the file. A file for each http request. 
 * Wrap Http request up completely so can test as mock.
 */
+
+    /*
+* Compare Images using some kind of Use sha1 to generate checksum
+* (you may need this to ensure that the image returned is not the "bad image" image sent back to you by
+* some sites when they're down or they reject your request.
+* https://www.youtube.com/watch?v=oJpZ5ygg4qQ
+* https://www.codeproject.com/Articles/38951/How-To-Hash-Data-Using-MD-and-SHA
+* */
 
     [TestFixture]
     public class WavescapeWebcamHttpRequestTests
@@ -35,13 +43,77 @@ namespace TcpGrabImage.UnitTests
             Assert.IsNotNull(img);
         }
 
-        /*
-         * Compare Images using some kind of Use sha1 to generate checksum
-         * (you may need this to ensure that the image returned is not the "bad image" image sent back to you by
-         * some sites when they're down or they reject your request.
-         * https://www.youtube.com/watch?v=oJpZ5ygg4qQ
-         * https://www.codeproject.com/Articles/38951/How-To-Hash-Data-Using-MD-and-SHA
-         * */
+        //[Test]
+        //public void CreateHttpClientRequestFrom_SampleBigBay_GET_Request()
+        //{
+        //    string filePath = "";
+
+        //    RequestFile requestFile = new RequestFile(filePath);
+        //    Assert.AreEqual("www.wavescape.co.za", requestFile["Host"]);
+        //    Assert.AreEqual("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36", requestFile["User-Agent"]);
+        //    Assert.AreEqual("text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8", requestFile["Accept"]);
+        //    Assert.AreEqual("http://www.wavescape.co.za/tools/webcams/big-bay.html", requestFile["Referer"]);
+        //    Assert.AreEqual("gzip, deflate, sdch", requestFile["Accept -Encoding"]);
+        //    Assert.AreEqual("en-US,en;q=0.8", requestFile["Accept-Language"]);
+        //}
+
+        [Test]
+        public void IterateThroughHttpClientRequest_From_SampleBigBay_Get_Request()
+        {
+            Dictionary<string, string> headers = new Dictionary<string, string>();
+
+            string filePath = "";
+            RequestFile requestFile = new RequestFile(filePath);
+            foreach (RequestHeader requestHeader in requestFile)
+                headers.Add(requestHeader.Key, requestHeader.Value);
+
+            Assert.AreEqual("www.wavescape.co.za", headers["Host"]);
+            Assert.AreEqual("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36", headers["User-Agent"]);
+            Assert.AreEqual("text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8", headers["Accept"]);
+            Assert.AreEqual("http://www.wavescape.co.za/tools/webcams/big-bay.html", headers["Referer"]);
+            Assert.AreEqual("gzip, deflate, sdch", headers["Accept-Encoding"]);
+            Assert.AreEqual("en-US,en;q=0.8", headers["Accept-Language"]);
+        }
+    }
+
+    internal class RequestFile : IEnumerable<RequestHeader>
+    {
+        // How do I implement IEnumerable<T>
+        // http://stackoverflow.com/questions/11296810/how-do-i-implement-ienumerablet
+        private string filePath;
+
+        public RequestFile(string filePath)
+        {
+            this.filePath = filePath;
+        }
+
+        public IEnumerator<RequestHeader> GetEnumerator()
+        {
+            yield return new RequestHeader() { Key = "Host", Value = "www.wavescape.co.za" };
+            yield return new RequestHeader() { Key = "User-Agent", Value = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36" };
+            yield return new RequestHeader() { Key = "Accept", Value = "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8" };
+            yield return new RequestHeader() { Key = "Referer", Value = "http://www.wavescape.co.za/tools/webcams/big-bay.html" };
+
+            yield return new RequestHeader() { Key = "Accept-Encoding", Value = "gzip, deflate, sdch" };
+            yield return new RequestHeader() { Key = "Accept-Language", Value = "en-US,en;q=0.8" };
+        }
+
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            yield return new RequestHeader() { Key = "Host", Value = "www.wavescape.co.za" };
+            yield return new RequestHeader() { Key = "User-Agent", Value = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36" };
+            yield return new RequestHeader() { Key = "Accept", Value = "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8" };
+            yield return new RequestHeader() { Key = "Referer", Value = "http://www.wavescape.co.za/tools/webcams/big-bay.html" };
+
+            yield return new RequestHeader() { Key = "Accept-Encoding", Value = "gzip, deflate, sdch" };
+            yield return new RequestHeader() { Key = "Accept-Language", Value = "en-US,en;q=0.8" };
+        }
+    }
+
+    internal class RequestHeader
+    {
+        public string Key { get; internal set; }
+        public string Value { get; internal set; }
     }
 
     internal class SimpleWebCam
@@ -56,8 +128,6 @@ namespace TcpGrabImage.UnitTests
                 RequestUri = new Uri("http://www.bouml.fr/doc/figs/diagramstereotypes.png"),
                 Method = HttpMethod.Get,
                 Version = new Version("1.1")
-
-
             };
 
             request.Headers.Host = "www.bouml.fr";
