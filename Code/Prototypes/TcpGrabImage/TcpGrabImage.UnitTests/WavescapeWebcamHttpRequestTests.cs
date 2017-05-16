@@ -35,6 +35,7 @@ namespace TcpGrabImage.UnitTests
     public class WavescapeWebcamHttpRequestTests
     {
         [Test]
+        [Category("Integration")]
         public void GetImageFromHyperlink()
         {
             SimpleWebCam simpleWebCam = new SimpleWebCam();
@@ -58,12 +59,13 @@ namespace TcpGrabImage.UnitTests
         //}
 
         [Test]
+        [Category("Fast")]
         public void IterateThroughHttpClientRequest_From_SampleBigBay_Get_Request()
         {
             Dictionary<string, string> headers = new Dictionary<string, string>();
 
-            string filePath = "";
-            RequestFile requestFile = new RequestFile(filePath);
+            //RequestFile requestFile = new RequestFile(TxtFile.ReadText("HTTP_GET_BigBay.txt"));
+            RequestFile requestFile = new RequestFile(TxtFile.ResolvePath("HTTP_GET_BigBay.txt"));
             foreach (RequestHeader requestHeader in requestFile)
                 headers.Add(requestHeader.Key, requestHeader.Value);
 
@@ -89,24 +91,33 @@ namespace TcpGrabImage.UnitTests
 
         public IEnumerator<RequestHeader> GetEnumerator()
         {
-            yield return new RequestHeader() { Key = "Host", Value = "www.wavescape.co.za" };
-            yield return new RequestHeader() { Key = "User-Agent", Value = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36" };
-            yield return new RequestHeader() { Key = "Accept", Value = "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8" };
-            yield return new RequestHeader() { Key = "Referer", Value = "http://www.wavescape.co.za/tools/webcams/big-bay.html" };
+            if (File.Exists(filePath))
+            {
+                using (StreamReader streamReader = File.OpenText(filePath))
+                {
+                    string input = null;
+                    while ((input = streamReader.ReadLine()) != null)
+                    {
+                        if (!string.IsNullOrWhiteSpace(input) && input.Contains(":") && !input.Contains("GET"))
+                        {
+                            int index = input.IndexOf(':', 0);
+                            string key = input.Substring(0, index);
+                            string value = input.Substring(index + 1, input.Length - (index + 1));
 
-            yield return new RequestHeader() { Key = "Accept-Encoding", Value = "gzip, deflate, sdch" };
-            yield return new RequestHeader() { Key = "Accept-Language", Value = "en-US,en;q=0.8" };
+                            RequestHeader requestHeader = new RequestHeader();
+                            requestHeader.Key = key.Trim();
+                            requestHeader.Value = value.Trim();
+                            yield return requestHeader;
+                        }
+                    }
+                }
+                yield break;
+            }
         }
 
         IEnumerator IEnumerable.GetEnumerator()
         {
-            yield return new RequestHeader() { Key = "Host", Value = "www.wavescape.co.za" };
-            yield return new RequestHeader() { Key = "User-Agent", Value = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36" };
-            yield return new RequestHeader() { Key = "Accept", Value = "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8" };
-            yield return new RequestHeader() { Key = "Referer", Value = "http://www.wavescape.co.za/tools/webcams/big-bay.html" };
-
-            yield return new RequestHeader() { Key = "Accept-Encoding", Value = "gzip, deflate, sdch" };
-            yield return new RequestHeader() { Key = "Accept-Language", Value = "en-US,en;q=0.8" };
+            return this.GetEnumerator();
         }
     }
 
