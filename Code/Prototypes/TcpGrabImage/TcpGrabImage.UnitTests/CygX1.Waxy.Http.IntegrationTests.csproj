@@ -7,8 +7,8 @@
     <ProjectGuid>{CBC33518-D00C-4A4D-BA36-5C7A8EC8596E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>TcpGrabImage.UnitTests</RootNamespace>
-    <AssemblyName>TcpGrabImage.UnitTests</AssemblyName>
+    <RootNamespace>CygX1.Waxy.Http.IntegrationTests</RootNamespace>
+    <AssemblyName>CygX1.Waxy.Http.IntegrationTests</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

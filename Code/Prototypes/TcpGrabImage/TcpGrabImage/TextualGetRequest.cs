@@ -20,9 +20,9 @@ namespace CygX1.Waxy.Http
      * */
     public class RequestHeader
     {
-        public RequestHeader(string requestLine)
+        internal RequestHeader(string requestLine)
         {
-            if(!string.IsNullOrWhiteSpace(requestLine) || requestLine.Contains(":") || !requestLine.Contains("GET"))
+            if(string.IsNullOrWhiteSpace(requestLine) || !requestLine.Contains(":") || requestLine.Contains("GET"))
                 throw new InvalidHttpRequestHeader("Invalid request header. Request header string cannot be parsed.");
 
             int index = requestLine.IndexOf(':', 0);
