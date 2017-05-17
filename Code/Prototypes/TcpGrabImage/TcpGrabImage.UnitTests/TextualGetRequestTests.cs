@@ -31,16 +31,6 @@ namespace CygX1.Waxy.Http.IntegrationTests
     [TestFixture]
     public class TextualGetRequestTests
     {
-        [Test]
-        [Category("Integration")]
-        public void GetImageFromHyperlink()
-        {
-            ImageRequester imageRequester = new ImageRequester();
-            Image img = imageRequester.Fetch();
-            img.Save(@"C:\Users\robertb\Documents\Work\test.png", ImageFormat.Png);
-            Assert.IsNotNull(img);
-        }
-
         //[Test]
         //public void CreateHttpClientRequestFrom_SampleBigBay_GET_Request()
         //{
@@ -57,11 +47,10 @@ namespace CygX1.Waxy.Http.IntegrationTests
 
         [Test]
         [Category("Fast")]
-        public void IterateThroughHttpClientRequest_From_SampleBigBay_Get_Request()
+        public void TextualGetRequest_IterateThroughHttpClientRequest_From_SampleBigBay_Get_Request()
         {
             Dictionary<string, string> headers = new Dictionary<string, string>();
 
-            //RequestFile requestFile = new RequestFile(TxtFile.ReadText("HTTP_GET_BigBay.txt"));
             TextualGetRequest textualGetRequest = new TextualGetRequest(TxtFile.ResolvePath("HTTP_GET_BigBay.txt"));
             foreach (RequestHeader requestHeader in textualGetRequest)
                 headers.Add(requestHeader.Key, requestHeader.Value);
@@ -74,114 +63,4 @@ namespace CygX1.Waxy.Http.IntegrationTests
             Assert.AreEqual("en-US,en;q=0.8", headers["Accept-Language"]);
         }
     }
-
-    //internal class RequestFile : IEnumerable<RequestHeader>
-    //{
-    //    // How do I implement IEnumerable<T>
-    //    // http://stackoverflow.com/questions/11296810/how-do-i-implement-ienumerablet
-    //    private string filePath;
-
-    //    public RequestFile(string filePath)
-    //    {
-    //        this.filePath = filePath;
-    //    }
-
-    //    public IEnumerator<RequestHeader> GetEnumerator()
-    //    {
-    //        if (File.Exists(filePath))
-    //        {
-    //            using (StreamReader streamReader = File.OpenText(filePath))
-    //            {
-    //                string input = null;
-    //                while ((input = streamReader.ReadLine()) != null)
-    //                {
-    //                    if (!string.IsNullOrWhiteSpace(input) && input.Contains(":") && !input.Contains("GET"))
-    //                    {
-    //                        int index = input.IndexOf(':', 0);
-    //                        string key = input.Substring(0, index);
-    //                        string value = input.Substring(index + 1, input.Length - (index + 1));
-
-    //                        RequestHeader requestHeader = new RequestHeader();
-    //                        requestHeader.Key = key.Trim();
-    //                        requestHeader.Value = value.Trim();
-    //                        yield return requestHeader;
-    //                    }
-    //                }
-    //            }
-    //            yield break;
-    //        }
-    //    }
-
-    //    IEnumerator IEnumerable.GetEnumerator()
-    //    {
-    //        return this.GetEnumerator();
-    //    }
-    }
-
-//    internal class RequestHeader
-//    {
-//        public string Key { get; internal set; }
-//        public string Value { get; internal set; }
-//    }
-
-//    internal class SimpleWebCam
-//    {
-//        // http://stackoverflow.com/questions/1053052/a-generic-error-occurred-in-gdi-jpeg-image-to-memorystream
-//        // http://stackoverflow.com/questions/12022965/adding-http-headers-to-httpclient
-//        internal Image Fetch()
-//        {
-//            var client = new HttpClient();
-//            var request = new HttpRequestMessage
-//            {
-//                RequestUri = new Uri("http://www.bouml.fr/doc/figs/diagramstereotypes.png"),
-//                Method = HttpMethod.Get,
-//                Version = new Version("1.1")
-//            };
-
-//            request.Headers.Host = "www.bouml.fr";
-//            request.Headers.Connection.Add("keep-alive");
-//            request.Headers.Add("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36");
-//            request.Headers.Add("Accept", "image/webp,image/*,*/*;q=0.8");
-//            request.Headers.Add("Referer", "http://www.bouml.fr/doc/statediagram.html");
-//            request.Headers.Add("Accept-Encoding", "gzip, deflate, sdch");
-//            request.Headers.Add("Accept-Language", "en-US,en;q=0.8");
-
-//            Image img = null;
-
-//            var task = client.SendAsync(request)
-//                .ContinueWith((taskwithmsg) =>
-//                {
-//                    var response = taskwithmsg.Result;
-//                    Task<byte[]> taskByteArray = response.Content.ReadAsByteArrayAsync();
-//                    taskByteArray.Wait();
-
-//                    using (MemoryStream memoryStream = new MemoryStream(taskByteArray.Result))
-//                    {
-//                        img = Image.FromStream(memoryStream);
-//                    }
-//                });
-//            task.Wait();
-
-//            return img;
-//        }
-//    }
-//}
-
-
-
-// http://www.surf-forecast.com/breaks/Bayof-Plenty_1/photos/5658
-//[Test]
-//public void WavescapeWebcamHttpRequest_ToString_ReturnsCorrectlyFilledOut_HttpRequest()
-//{
-//    string requestTemplate = TxtFile.ReadText("Wavescape_Cam_LandingPage.txt");
-//    string finalRequest = TxtFile.ReadText("HTTP_GET_BigBay.txt");
-
-//    string referer = @"http://www.wavescape.co.za/tools/webcams/big-bay.html";
-//    string url = @"http://www.wavescape.co.za/plugins/content/webcam/newfetch.php?pic=bigbay.jpg";
-//    string randomNumber = "614786193";
-
-//    WavescapeWebcamHttpRequest httpRequest = new WavescapeWebcamHttpRequest(requestTemplate, referer, url, randomNumber);
-//    string fullText = httpRequest.ToString();
-
-//    Assert.That(fullText, Is.EqualTo(finalRequest.Trim()));
-//}
+}
