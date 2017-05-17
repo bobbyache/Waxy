@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TcpGrabImageConsole", "TcpG
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CygX1.Waxy.Http", "TcpGrabImage\CygX1.Waxy.Http.csproj", "{D9190736-AFDA-4971-9D3D-D5A3E0ADF295}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TcpGrabImage.UnitTests", "TcpGrabImage.UnitTests\TcpGrabImage.UnitTests.csproj", "{CBC33518-D00C-4A4D-BA36-5C7A8EC8596E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CygX1.Waxy.Http.IntegrationTests", "TcpGrabImage.UnitTests\CygX1.Waxy.Http.IntegrationTests.csproj", "{CBC33518-D00C-4A4D-BA36-5C7A8EC8596E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

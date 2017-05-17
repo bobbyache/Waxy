@@ -50,7 +50,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="WavescapeWebcamHttpRequestTests.cs" />
+    <Compile Include="TextualGetRequestTests.cs" />
     <Compile Include="Helpers\TxtFile.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

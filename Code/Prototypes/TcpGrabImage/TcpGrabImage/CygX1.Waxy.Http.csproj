@@ -44,10 +44,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ImageRequester.cs" />
     <Compile Include="TextualGetRequest.cs" />
     <Compile Include="ImageGrabber.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="WavescapeWebcamHttpRequest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

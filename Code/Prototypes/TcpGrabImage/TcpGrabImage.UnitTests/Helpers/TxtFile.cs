@@ -6,7 +6,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TcpGrabImage.UnitTests.Helpers
+namespace CygX1.Waxy.Http.IntegrationTests
 {
     public class TxtFile
     {
