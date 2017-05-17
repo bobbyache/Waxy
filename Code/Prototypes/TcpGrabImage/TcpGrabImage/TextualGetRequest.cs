@@ -10,6 +10,24 @@ namespace CygX1.Waxy.Http
 {
     public class RequestHeader
     {
+        public RequestHeader()
+        {
+
+        }
+
+        public RequestHeader(string requestLine)
+        {
+            if (!string.IsNullOrWhiteSpace(requestLine) && requestLine.Contains(":") && !requestLine.Contains("GET"))
+            {
+                int index = requestLine.IndexOf(':', 0);
+                string key = requestLine.Substring(0, index);
+                string value = requestLine.Substring(index + 1, requestLine.Length - (index + 1));
+
+                this.Key = key.Trim();
+                this.Value = value.Trim();
+            }
+        }
+
         public string Key { get; internal set; }
         public string Value { get; internal set; }
     }
@@ -18,7 +36,9 @@ namespace CygX1.Waxy.Http
     {
         // How do I implement IEnumerable<T>
         // http://stackoverflow.com/questions/11296810/how-do-i-implement-ienumerablet
+
         private string filePath;
+        private string[] requestLines;
 
         public TextualGetRequest(string filePath)
         {
@@ -37,29 +57,39 @@ namespace CygX1.Waxy.Http
         {
             get
             {
-                if (File.Exists(filePath))
-                {
-                    using (StreamReader streamReader = File.OpenText(filePath))
-                    {
-                        string input = null;
-                        while ((input = streamReader.ReadLine()) != null)
-                        {
-                            if (!string.IsNullOrWhiteSpace(input) && input.Contains(":") && !input.Contains("GET"))
-                            {
-                                int index = input.IndexOf(':', 0);
-                                string key = input.Substring(0, index);
-                                string value = input.Substring(index + 1, input.Length - (index + 1));
+                if (requestLines == null)
+                    requestLines = ReadRequestFile(filePath);
 
-                                RequestHeader requestHeader = new RequestHeader();
-                                requestHeader.Key = key.Trim();
-                                requestHeader.Value = value.Trim();
-                                yield return requestHeader;
-                            }
-                        }
-                    }
-                    yield break;
-                }
+                IEnumerable<RequestHeader> requestHeaders = requestLines.Skip(1)
+                                             .Where(s => ValidHeaderLine(s))
+                                             .Select(s => new RequestHeader(s));
+
+                return requestHeaders;
             }
+        }
+
+        private string[] ReadRequestFile(string filePath)
+        {
+            List<string> requestLineList = new List<string>();
+
+            if (File.Exists(filePath))
+            {
+                using (StreamReader streamReader = File.OpenText(filePath))
+                {
+                    string input = null;
+                    while ((input = streamReader.ReadLine()) != null)
+                    {
+                        requestLineList.Add(input);
+                    }
+                }
+                return requestLineList.ToArray();
+            }
+            return null;
+        }
+
+        private bool ValidHeaderLine(string requestLine)
+        {
+            return !string.IsNullOrWhiteSpace(requestLine) && requestLine.Contains(":") && !requestLine.Contains("GET");
         }
     }
 }

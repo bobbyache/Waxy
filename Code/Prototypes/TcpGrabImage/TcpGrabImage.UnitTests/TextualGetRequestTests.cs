@@ -33,6 +33,15 @@ namespace CygX1.Waxy.Http.IntegrationTests
     public class TextualGetRequestTests
     {
         [Test]
+        public void RequestHeader_ParseHeaderFromRequesHeaderLine()
+        {
+            string requestHeaderLine = " Host: www.wavescape.co.za ";
+            RequestHeader requestHeader = new RequestHeader(requestHeaderLine);
+            Assert.AreEqual("Host", requestHeader.Key, "RequestHeader.Key is expected to be 'Host'");
+            Assert.AreEqual("www.wavescape.co.za", requestHeader.Value, "RequestHeader.Value is expected to be 'www.wavescape.co.za'");
+        }
+
+        [Test]
         public void TextualGetRequest_GetHeaderValues_Via_IndexerProperties()
         {
             TextualGetRequest textualGetRequest = new TextualGetRequest(TxtFile.ResolvePath("HTTP_GET_BigBay.txt"));
