@@ -15,7 +15,7 @@ using System.Collections;
 namespace TcpGrabImage.UnitTests
 {
 
-    /*
+ /*
 * Waxy - Regex to filter out hyperlinks or anchor tags or hyperlinks with image targets. 
 * Need this Regex as a setting in case image different. Then can get full link for http... 
 * This for pages that require some random code to stop linking from another site. Otherwise can just manually supply link. 

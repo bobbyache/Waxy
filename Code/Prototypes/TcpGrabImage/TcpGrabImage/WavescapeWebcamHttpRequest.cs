@@ -6,7 +6,7 @@
 
 //namespace TcpGrabImage
 //{
-//    public class WavescapeWebcamHttpRequest
+//    public class CygX1.Waxy.Http
 //    {
 //        private string requestTemplate;
 

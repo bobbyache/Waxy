@@ -7,8 +7,8 @@
     <ProjectGuid>{D9190736-AFDA-4971-9D3D-D5A3E0ADF295}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>TcpGrabImage</RootNamespace>
-    <AssemblyName>TcpGrabImage</AssemblyName>
+    <RootNamespace>CygX1.Waxy.Http</RootNamespace>
+    <AssemblyName>CygX1.Waxy.Http</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="TextualGetRequest.cs" />
     <Compile Include="ImageGrabber.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WavescapeWebcamHttpRequest.cs" />

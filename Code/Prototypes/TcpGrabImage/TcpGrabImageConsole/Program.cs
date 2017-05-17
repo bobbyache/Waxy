@@ -13,8 +13,8 @@ namespace TcpGrabImageConsole
     {
         static void Main(string[] args)
         {
-            ImageGrabber imageGrabber = new ImageGrabber();
-            imageGrabber.Test();
+            //ImageGrabber imageGrabber = new ImageGrabber();
+            //imageGrabber.Test();
 
             //string request = File.ReadAllText("Simple.txt");
             ////string request = File.ReadAllText("Hoek.txt");
