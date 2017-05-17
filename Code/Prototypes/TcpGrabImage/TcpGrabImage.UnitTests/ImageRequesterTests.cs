@@ -9,7 +9,7 @@ namespace TcpGrabImage.UnitTests
     public class ImageRequesterTests
     {
         [Test]
-        [Category("Integration")]
+        [Category("Downloads")]
         public void ImageRequester_DownloadSimpleImage()
         {
             ImageRequester imageRequester = new ImageRequester();

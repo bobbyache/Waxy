@@ -42,6 +42,22 @@ namespace CygX1.Waxy.Http.IntegrationTests
         }
 
         [Test]
+        public void RequestHeader_ParseEmptyHeader_ReturnsEmptyValueText()
+        {
+            string requestHeaderLine = "Host: ";
+            RequestHeader requestHeader = new RequestHeader(requestHeaderLine);
+            Assert.AreEqual("Host", requestHeader.Key, "RequestHeader.Key is expected to be 'Host'");
+            Assert.AreEqual("", requestHeader.Value, "RequestHeader.Value is expected to be ''");
+        }
+
+        [Test]
+        public void RequestHeader_ParseInvalidEmptyHeader_WithNoColon_Throws_InvalidHttpRequestHeader()
+        {
+            string requestHeaderLine = "invalid header";
+            Assert.Throws<Exceptions.InvalidHttpRequestHeader>(() => new RequestHeader(requestHeaderLine));
+        }
+
+        [Test]
         public void TextualGetRequest_GetHeaderValues_Via_IndexerProperties()
         {
             TextualGetRequest textualGetRequest = new TextualGetRequest(TxtFile.ResolvePath("HTTP_GET_BigBay.txt"));
