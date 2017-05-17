@@ -14,7 +14,7 @@ namespace CygX1.Waxy.Http
         public string Value { get; internal set; }
     }
 
-    public class TextualGetRequest : IEnumerable<RequestHeader>
+    public class TextualGetRequest
     {
         // How do I implement IEnumerable<T>
         // http://stackoverflow.com/questions/11296810/how-do-i-implement-ienumerablet
@@ -24,36 +24,42 @@ namespace CygX1.Waxy.Http
         {
             this.filePath = filePath;
         }
-        
-        public IEnumerator<RequestHeader> GetEnumerator()
-        {
-            if (File.Exists(filePath))
-            {
-                using (StreamReader streamReader = File.OpenText(filePath))
-                {
-                    string input = null;
-                    while ((input = streamReader.ReadLine()) != null)
-                    {
-                        if (!string.IsNullOrWhiteSpace(input) && input.Contains(":") && !input.Contains("GET"))
-                        {
-                            int index = input.IndexOf(':', 0);
-                            string key = input.Substring(0, index);
-                            string value = input.Substring(index + 1, input.Length - (index + 1));
 
-                            RequestHeader requestHeader = new RequestHeader();
-                            requestHeader.Key = key.Trim();
-                            requestHeader.Value = value.Trim();
-                            yield return requestHeader;
-                        }
-                    }
-                }
-                yield break;
+        public string this [string key]
+        {
+            get
+            {
+                return RequestHeaders.Where(r => r.Key == key).SingleOrDefault().Value;
             }
         }
 
-        IEnumerator IEnumerable.GetEnumerator()
+        public IEnumerable<RequestHeader> RequestHeaders
         {
-            return this.GetEnumerator();
+            get
+            {
+                if (File.Exists(filePath))
+                {
+                    using (StreamReader streamReader = File.OpenText(filePath))
+                    {
+                        string input = null;
+                        while ((input = streamReader.ReadLine()) != null)
+                        {
+                            if (!string.IsNullOrWhiteSpace(input) && input.Contains(":") && !input.Contains("GET"))
+                            {
+                                int index = input.IndexOf(':', 0);
+                                string key = input.Substring(0, index);
+                                string value = input.Substring(index + 1, input.Length - (index + 1));
+
+                                RequestHeader requestHeader = new RequestHeader();
+                                requestHeader.Key = key.Trim();
+                                requestHeader.Value = value.Trim();
+                                yield return requestHeader;
+                            }
+                        }
+                    }
+                    yield break;
+                }
+            }
         }
     }
 }

@@ -29,30 +29,29 @@ namespace CygX1.Waxy.Http.IntegrationTests
     ***************************************************************************************************************************************** */
 
     [TestFixture]
+    [Category("File Processing")]
     public class TextualGetRequestTests
     {
-        //[Test]
-        //public void CreateHttpClientRequestFrom_SampleBigBay_GET_Request()
-        //{
-        //    string filePath = "";
+        [Test]
+        public void TextualGetRequest_GetHeaderValues_Via_IndexerProperties()
+        {
+            TextualGetRequest textualGetRequest = new TextualGetRequest(TxtFile.ResolvePath("HTTP_GET_BigBay.txt"));
 
-        //    RequestFile requestFile = new RequestFile(filePath);
-        //    Assert.AreEqual("www.wavescape.co.za", requestFile["Host"]);
-        //    Assert.AreEqual("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36", requestFile["User-Agent"]);
-        //    Assert.AreEqual("text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8", requestFile["Accept"]);
-        //    Assert.AreEqual("http://www.wavescape.co.za/tools/webcams/big-bay.html", requestFile["Referer"]);
-        //    Assert.AreEqual("gzip, deflate, sdch", requestFile["Accept -Encoding"]);
-        //    Assert.AreEqual("en-US,en;q=0.8", requestFile["Accept-Language"]);
-        //}
+            Assert.AreEqual("www.wavescape.co.za", textualGetRequest["Host"]);
+            Assert.AreEqual("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36", textualGetRequest["User-Agent"]);
+            Assert.AreEqual("text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8", textualGetRequest["Accept"]);
+            Assert.AreEqual("http://www.wavescape.co.za/tools/webcams/big-bay.html", textualGetRequest["Referer"]);
+            Assert.AreEqual("gzip, deflate, sdch", textualGetRequest["Accept-Encoding"]);
+            Assert.AreEqual("en-US,en;q=0.8", textualGetRequest["Accept-Language"]);
+        }
 
         [Test]
-        [Category("Fast")]
         public void TextualGetRequest_IterateThroughHttpClientRequest_From_SampleBigBay_Get_Request()
         {
             Dictionary<string, string> headers = new Dictionary<string, string>();
 
             TextualGetRequest textualGetRequest = new TextualGetRequest(TxtFile.ResolvePath("HTTP_GET_BigBay.txt"));
-            foreach (RequestHeader requestHeader in textualGetRequest)
+            foreach (RequestHeader requestHeader in textualGetRequest.RequestHeaders)
                 headers.Add(requestHeader.Key, requestHeader.Value);
 
             Assert.AreEqual("www.wavescape.co.za", headers["Host"]);
