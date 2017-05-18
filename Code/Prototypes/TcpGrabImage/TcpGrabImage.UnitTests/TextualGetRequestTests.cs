@@ -57,10 +57,13 @@ namespace CygX1.Waxy.Http.IntegrationTests
             Assert.Throws<Exceptions.InvalidHttpRequestHeader>(() => new RequestHeader(requestHeaderLine));
         }
 
+        
+
         [Test]
         public void TextualGetRequest_GetHeaderValues_Via_IndexerProperties()
         {
-            TextualGetRequest textualGetRequest = new TextualGetRequest(TxtFile.ResolvePath("HTTP_GET_BigBay.txt"));
+            string requestText = TxtFile.ReadText("HTTP_GET_BigBay.txt");
+            TextualGetRequest textualGetRequest = new TextualGetRequest(requestText);
 
             Assert.AreEqual("www.wavescape.co.za", textualGetRequest["Host"]);
             Assert.AreEqual("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36", textualGetRequest["User-Agent"]);
@@ -75,7 +78,9 @@ namespace CygX1.Waxy.Http.IntegrationTests
         {
             Dictionary<string, string> headers = new Dictionary<string, string>();
 
-            TextualGetRequest textualGetRequest = new TextualGetRequest(TxtFile.ResolvePath("HTTP_GET_BigBay.txt"));
+            string requestText = TxtFile.ReadText("HTTP_GET_BigBay.txt");
+            TextualGetRequest textualGetRequest = new TextualGetRequest(requestText);
+
             foreach (RequestHeader requestHeader in textualGetRequest.RequestHeaders)
                 headers.Add(requestHeader.Key, requestHeader.Value);
 

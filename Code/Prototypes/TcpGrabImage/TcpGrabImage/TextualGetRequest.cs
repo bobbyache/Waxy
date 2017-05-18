@@ -11,7 +11,6 @@ namespace CygX1.Waxy.Http
 {
     /*
      * Make RequestHeader a value object.
-     * Decouple file retrieval from TextualGetRequest.
      * 
      * Rather go:
      *  textualGetRequest.RequestHeaders.GetRequestHeaders();
@@ -45,12 +44,12 @@ namespace CygX1.Waxy.Http
         // How do I implement IEnumerable<T>
         // http://stackoverflow.com/questions/11296810/how-do-i-implement-ienumerablet
 
-        private string filePath;
+        private string templateText;
         private string[] requestLines;
 
-        public TextualGetRequest(string filePath)
+        public TextualGetRequest(string templateText)
         {
-            this.filePath = filePath;
+            this.templateText = templateText;
         }
 
         public string this [string key]
@@ -66,7 +65,7 @@ namespace CygX1.Waxy.Http
             get
             {
                 if (requestLines == null)
-                    requestLines = ReadRequestFile(filePath);
+                    requestLines = ProcessTemplateText(templateText);
 
                 IEnumerable<RequestHeader> requestHeaders = requestLines.Skip(1)
                                              .Where(s => ValidHeaderLine(s))
@@ -76,18 +75,20 @@ namespace CygX1.Waxy.Http
             }
         }
 
-        private string[] ReadRequestFile(string filePath)
+        private string[] ProcessTemplateText(string templateText)
         {
             List<string> requestLineList = new List<string>();
 
-            if (File.Exists(filePath))
+            if (!string.IsNullOrWhiteSpace(templateText))
             {
-                using (StreamReader streamReader = File.OpenText(filePath))
+                using (StringReader stringReader = new StringReader(templateText))
                 {
-                    string input = null;
-                    while ((input = streamReader.ReadLine()) != null)
+                    string line = null;
+                    while ((line = stringReader.ReadLine()) != null)
                     {
-                        requestLineList.Add(input);
+                        string currentLine = line.Trim();
+                        if (!string.IsNullOrEmpty(currentLine))
+                            requestLineList.Add(currentLine);
                     }
                 }
                 return requestLineList.ToArray();
