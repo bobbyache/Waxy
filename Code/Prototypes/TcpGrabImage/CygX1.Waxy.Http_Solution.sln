@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26430.6
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TcpGrabImageConsole", "TcpGrabImageConsole\TcpGrabImageConsole.csproj", "{71A23498-754E-44D8-8E36-309638C737B4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CygX1.Waxy.Http.TestConsole", "TcpGrabImageConsole\CygX1.Waxy.Http.TestConsole.csproj", "{71A23498-754E-44D8-8E36-309638C737B4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CygX1.Waxy.Http", "TcpGrabImage\CygX1.Waxy.Http.csproj", "{D9190736-AFDA-4971-9D3D-D5A3E0ADF295}"
 EndProject

@@ -48,7 +48,6 @@
     <Compile Include="ImageRequester.cs" />
     <Compile Include="SrcImageLocator.cs" />
     <Compile Include="TextualGetRequest.cs" />
-    <Compile Include="ImageGrabber.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
