@@ -17,6 +17,8 @@ namespace CygX1.Waxy.Http
      *  textualGetRequest.RequestHeaders.GetRequestHeaders();
      *  textualGetRequest.RequestHeaders["Host"]
      * 
+     * Consider decorator actual image request, landing page - referer request.
+     * Task with OnCompleted event returns a task... create example and show works with decorator.
      * */
     public class RequestHeader
     {
@@ -27,15 +29,11 @@ namespace CygX1.Waxy.Http
 
             int index = requestLine.IndexOf(':', 0);
 
-            if (index < 0)
-                throw new InvalidHttpRequestHeader("Invalid request header. Request header string cannot be parsed.");
-
             string key = requestLine.Substring(0, index);
             string value = requestLine.Substring(index + 1, requestLine.Length - (index + 1));
 
             this.Key = key.Trim();
             this.Value = value.Trim();
-            
         }
 
         public string Key { get; internal set; }
