@@ -51,6 +51,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ImageRequesterTests.cs" />
+    <Compile Include="SrcImageLocator.cs" />
+    <Compile Include="SrcImageLocatorTests.cs" />
     <Compile Include="TextualGetRequestTests.cs" />
     <Compile Include="Helpers\TxtFile.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -65,6 +67,12 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="HttpRequests\FakeLandingPage_Full.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HttpRequests\FakeLandingPage_Partial.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="HttpRequests\HTTP_GET_BigBay.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
