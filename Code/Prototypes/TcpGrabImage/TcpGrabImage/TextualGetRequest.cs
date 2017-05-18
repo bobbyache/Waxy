@@ -28,15 +28,15 @@ namespace CygX1.Waxy.Http
 
             int index = requestLine.IndexOf(':', 0);
 
-            string key = requestLine.Substring(0, index);
-            string value = requestLine.Substring(index + 1, requestLine.Length - (index + 1));
-
-            this.Key = key.Trim();
-            this.Value = value.Trim();
+            this.key = requestLine.Substring(0, index).Trim();
+            this.value = requestLine.Substring(index + 1, requestLine.Length - (index + 1)).Trim();
         }
 
-        public string Key { get; internal set; }
-        public string Value { get; internal set; }
+        private readonly string key;
+        private readonly string value;
+
+        public string Key { get { return key; } }
+        public string Value { get { return value; } }
     }
 
     public class TextualGetRequest
