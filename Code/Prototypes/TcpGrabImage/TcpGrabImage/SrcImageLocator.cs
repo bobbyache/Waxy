@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Text.RegularExpressions;
 
-namespace CygX1.Waxy.Http.IntegrationTests
+namespace CygX1.Waxy.Http
 {
     internal class SrcImageLocator
     {

@@ -51,7 +51,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ImageRequesterTests.cs" />
-    <Compile Include="SrcImageLocator.cs" />
     <Compile Include="SrcImageLocatorTests.cs" />
     <Compile Include="TextualGetRequestTests.cs" />
     <Compile Include="Helpers\TxtFile.cs" />
