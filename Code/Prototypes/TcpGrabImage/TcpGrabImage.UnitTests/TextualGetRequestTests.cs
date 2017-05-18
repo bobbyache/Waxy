@@ -16,6 +16,11 @@ namespace CygX1.Waxy.Http.IntegrationTests
     * some sites when they're down or they reject your request.
     * https://www.youtube.com/watch?v=oJpZ5ygg4qQ
     * https://www.codeproject.com/Articles/38951/How-To-Hash-Data-Using-MD-and-SHA
+    * 
+    * Regular expression for http url (Source: http://stackoverflow.com/questions/3809401/what-is-a-good-regular-expression-to-match-a-url)
+    * https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)
+    * Regular expression for relative url?
+    * [-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)
     ***************************************************************************************************************************************** */
 
     [TestFixture]
@@ -80,6 +85,34 @@ namespace CygX1.Waxy.Http.IntegrationTests
             Assert.AreEqual("http://www.wavescape.co.za/tools/webcams/big-bay.html", headers["Referer"]);
             Assert.AreEqual("gzip, deflate, sdch", headers["Accept-Encoding"]);
             Assert.AreEqual("en-US,en;q=0.8", headers["Accept-Language"]);
+        }
+
+        [Test]
+        public void TextualGetRequest_ParseGetHeader_WithDirectLink_IsParsedCorrectly()
+        {
+            // GET HTTP request specification.
+            // https://www.w3.org/Protocols/rfc2616/rfc2616-sec5.html
+            // No need to go scrape the link.
+            string requestText = TxtFile.ReadText("HTTP_GET_BigBay.txt");
+            TextualGetRequest textualGetRequest = new TextualGetRequest(requestText);
+
+            Assert.AreEqual("GET", textualGetRequest.Method);
+            Assert.AreEqual("http://www.wavescape.co.za/plugins/content/webcam/newfetch.php?pic=bigbay.jpg&tmpl=component&rnd=614786193", textualGetRequest.RequestUri);
+            Assert.AreEqual("HTTP/1.1", textualGetRequest.HttpVersion);
+        }
+
+        [Test]
+        public void TextualGetRequest_ParseGetHeader_RequiringScrapeWithLinkSearchPattern_IsParsedCorrectly()
+        {
+            // GET HTTP request specification.
+            // https://www.w3.org/Protocols/rfc2616/rfc2616-sec5.html
+            // With this link pattern it informs us that we will have to "find" the link.
+            string requestText = TxtFile.ReadText("HTTP_GET_BigBay_Referer.txt");
+            TextualGetRequest textualGetRequest = new TextualGetRequest(requestText);
+
+            Assert.AreEqual("GET", textualGetRequest.Method);
+            Assert.AreEqual(@"https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)bigbay.jpg&rnd=[0-9]*", textualGetRequest.RequestUri);
+            Assert.AreEqual("HTTP/1.1", textualGetRequest.HttpVersion);
         }
     }
 }

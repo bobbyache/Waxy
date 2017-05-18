@@ -71,6 +71,10 @@ namespace CygX1.Waxy.Http
             }
         }
 
+        public string Method { get; internal set; }
+        public string RequestUri { get; internal set; }
+        public string HttpVersion { get; internal set; }
+
         private string[] ProcessTemplateText(string templateText)
         {
             List<string> requestLineList = new List<string>();

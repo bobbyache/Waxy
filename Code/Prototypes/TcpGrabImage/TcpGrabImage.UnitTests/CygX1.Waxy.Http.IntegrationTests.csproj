@@ -72,6 +72,9 @@
     <Content Include="HttpRequests\FakeLandingPage_Partial.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="HttpRequests\HTTP_GET_BigBay_Referer.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="HttpRequests\HTTP_GET_BigBay.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
