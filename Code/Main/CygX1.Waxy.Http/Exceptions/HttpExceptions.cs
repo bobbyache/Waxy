@@ -11,4 +11,22 @@ namespace CygX1.Waxy.Http.Exceptions
         public InvalidHttpRequestHeader(string message, Exception inner) : base(message, inner) { }
         public InvalidHttpRequestHeader(SerializationInfo info, StreamingContext context) : base(info, context) { }
     }
+
+    [Serializable()]
+    public class BadRequestUriPatternException : Exception, ISerializable
+    {
+        public BadRequestUriPatternException() { }
+        public BadRequestUriPatternException(string message) : base(message) { }
+        public BadRequestUriPatternException(string message, Exception inner) : base(message, inner) { }
+        public BadRequestUriPatternException(SerializationInfo info, StreamingContext context) : base(info, context) { }
+    }
+
+    [Serializable()]
+    public class BadRequestMethodLineException : Exception, ISerializable
+    {
+        public BadRequestMethodLineException() { }
+        public BadRequestMethodLineException(string message) : base(message) { }
+        public BadRequestMethodLineException(string message, Exception inner) : base(message, inner) { }
+        public BadRequestMethodLineException(SerializationInfo info, StreamingContext context) : base(info, context) { }
+    }
 }

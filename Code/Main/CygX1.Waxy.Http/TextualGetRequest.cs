@@ -97,14 +97,33 @@ namespace CygX1.Waxy.Http
 
         private string[] ParseGeneralHeaderParts(string[] requestHeaderLines)
         {
+
             string[] parts = requestHeaderLines.First().Trim().Split(' ');
             string generalHeader = requestHeaderLines.First().Trim();
+
+            if (parts.Length != 3)
+                throw new BadRequestMethodLineException("The http request method line is malformed.");
+
+            if (parts.Any(p => string.IsNullOrWhiteSpace(p)))
+                throw new BadRequestMethodLineException("The http request method line is malformed.");
+
+            if (generalHeader.Contains("{{") && !generalHeader.Contains("}}"))
+                throw new BadRequestUriPatternException("The request uri expression pattern is malformed.");
+
+            if (generalHeader.Contains("}}") && !generalHeader.Contains("{{"))
+                throw new BadRequestUriPatternException("The request uri expression pattern is malformed.");
 
             if (generalHeader.Contains("{{"))
             {
                 int patternStartIndex = generalHeader.IndexOf("{{");
                 int patternEndIndex = generalHeader.IndexOf("}}") + 2;
                 string headerPattern = generalHeader.Substring(patternStartIndex, patternEndIndex - patternStartIndex);
+
+                string pattern = headerPattern.Replace("{{", "");
+                pattern = pattern.Replace("}}", "");
+
+                if (string.IsNullOrWhiteSpace(pattern))
+                    throw new BadRequestUriPatternException("The request uri expression pattern is malformed.");
 
                 string[] methodParts = new string[3];
                 methodParts[0] = parts.First();
