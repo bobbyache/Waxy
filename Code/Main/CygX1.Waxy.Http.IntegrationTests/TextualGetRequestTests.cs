@@ -75,23 +75,5 @@ namespace CygX1.Waxy.Http.IntegrationTests
             Assert.AreEqual("http://www.wavescape.co.za/plugins/content/webcam/newfetch.php?pic=bigbay.jpg&tmpl=component&rnd=614786193", textualGetRequest.RequestUri);
             Assert.AreEqual("HTTP/1.1", textualGetRequest.HttpVersion);
         }
-
-
-
-        //[Test]
-        //public void TextualGetRequest_ParseGetHeader_RequiringScrapeWithLinkSearchPattern_IsParsedCorrectly()
-        //{
-        //    // GET HTTP request specification.
-        //    // https://www.w3.org/Protocols/rfc2616/rfc2616-sec5.html
-        //    // With this link pattern it informs us that we will have to "find" the link.
-        //    string requestText = TxtFile.ReadText("HTTP_GET_BigBay_Referer.txt");
-        //    TextualGetRequest textualGetRequest = new TextualGetRequest(requestText);
-
-        //    Assert.AreEqual("GET", textualGetRequest.Method);
-        //    Assert.AreEqual(@"https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)bigbay.jpg&rnd=[0-9]*", textualGetRequest.RequestUri);
-        //    Assert.AreEqual("HTTP/1.1", textualGetRequest.HttpVersion);
-        //}
-
-
     }
 }

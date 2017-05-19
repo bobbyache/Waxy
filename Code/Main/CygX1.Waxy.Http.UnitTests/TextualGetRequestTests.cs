@@ -44,6 +44,40 @@ namespace CygX1.Waxy.Http.UnitTests
             Assert.AreEqual("HTTP/1.1", textualGetRequest.HttpVersion);
         }
 
+        [Test]
+        public void TextualGetRequest_ParseGetHeaderText_WithLinkPattern_Spaced_ToTheHoek_IsParsedCorrectly()
+        {
+            string requestText = GetTextualHttpGetRequest(
+                host: @"www.wavescape.co.za",
+                requestUri: @"{{ https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)bigbay.jpg&rnd=[0-9]* }}",
+                refererUri: @"http://www.brutube.co.za/tools/webcams/noordhoek.html"
+                );
+            // GET HTTP request specification.
+            // https://www.w3.org/Protocols/rfc2616/rfc2616-sec5.html
+            TextualGetRequest textualGetRequest = new TextualGetRequest(requestText);
+
+            Assert.AreEqual("GET", textualGetRequest.Method);
+            Assert.AreEqual(@"{{ https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)bigbay.jpg&rnd=[0-9]* }}", textualGetRequest.RequestUri);
+            Assert.AreEqual("HTTP/1.1", textualGetRequest.HttpVersion);
+        }
+
+        [Test]
+        public void TextualGetRequest_ParseGetHeaderText_WithLinkPattern_NonSpaced_ToTheHoek_IsParsedCorrectly()
+        {
+            string requestText = GetTextualHttpGetRequest(
+                host: @"www.wavescape.co.za",
+                requestUri: @"{{https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)bigbay.jpg&rnd=[0-9]*}}",
+                refererUri: @"http://www.brutube.co.za/tools/webcams/noordhoek.html"
+                );
+            // GET HTTP request specification.
+            // https://www.w3.org/Protocols/rfc2616/rfc2616-sec5.html
+            TextualGetRequest textualGetRequest = new TextualGetRequest(requestText);
+
+            Assert.AreEqual("GET", textualGetRequest.Method);
+            Assert.AreEqual(@"{{https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)bigbay.jpg&rnd=[0-9]*}}", textualGetRequest.RequestUri);
+            Assert.AreEqual("HTTP/1.1", textualGetRequest.HttpVersion);
+        }
+
         private string GetTextualHttpGetRequest(string host, string requestUri, string refererUri)
         {
             StringBuilder builder = new StringBuilder();

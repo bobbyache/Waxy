@@ -97,7 +97,24 @@ namespace CygX1.Waxy.Http
 
         private string[] ParseGeneralHeaderParts(string[] requestHeaderLines)
         {
-            return requestHeaderLines.First().Trim().Split(' ');
+            string[] parts = requestHeaderLines.First().Trim().Split(' ');
+            string generalHeader = requestHeaderLines.First().Trim();
+
+            if (generalHeader.Contains("{{"))
+            {
+                int patternStartIndex = generalHeader.IndexOf("{{");
+                int patternEndIndex = generalHeader.IndexOf("}}") + 2;
+                string headerPattern = generalHeader.Substring(patternStartIndex, patternEndIndex - patternStartIndex);
+
+                string[] methodParts = new string[3];
+                methodParts[0] = parts.First();
+                methodParts[1] = headerPattern.Trim();
+                methodParts[2] = parts.Last();
+
+                return methodParts;
+            }
+            else 
+                return requestHeaderLines.First().Trim().Split(' ');
         }
 
         private bool ValidHeaderLine(string requestLine)
