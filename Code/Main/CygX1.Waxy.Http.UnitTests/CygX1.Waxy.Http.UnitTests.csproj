@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{CBC33518-D00C-4A4D-BA36-5C7A8EC8596E}</ProjectGuid>
+    <ProjectGuid>{B5C4642F-113D-4C02-A4A4-D7FEE3DC4C2B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CygX1.Waxy.Http.IntegrationTests</RootNamespace>
-    <AssemblyName>CygX1.Waxy.Http.IntegrationTests</AssemblyName>
+    <RootNamespace>CygX1.Waxy.Http.UnitTests</RootNamespace>
+    <AssemblyName>CygX1.Waxy.Http.UnitTests</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -41,7 +41,6 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -50,37 +49,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ImageRequesterTests.cs" />
-    <Compile Include="SrcImageLocatorTests.cs" />
+    <Compile Include="RequestHeaderTests.cs" />
     <Compile Include="TextualGetRequestTests.cs" />
-    <Compile Include="Helpers\TxtFile.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CygX1.Waxy.Http\CygX1.Waxy.Http.csproj">
       <Project>{d9190736-afda-4971-9d3d-d5a3e0adf295}</Project>
       <Name>CygX1.Waxy.Http</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="HttpRequests\FakeLandingPage_Full.txt">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HttpRequests\FakeLandingPage_Partial.txt">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HttpRequests\HTTP_GET_BigBay_Referer.txt">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HttpRequests\HTTP_GET_BigBay.txt">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HttpRequests\Wavescape_Cam_LandingPage.txt">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />

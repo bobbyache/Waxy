@@ -6,10 +6,10 @@ using System.Drawing.Imaging;
 namespace TcpGrabImage.UnitTests
 {
     [TestFixture]
+    [Category("Slow Integration Downloads")]
     public class ImageRequesterTests
     {
         [Test]
-        [Category("Downloads")]
         public void ImageRequester_DownloadSimpleImage()
         {
             ImageRequester imageRequester = new ImageRequester();

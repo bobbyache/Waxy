@@ -3,7 +3,7 @@
 namespace CygX1.Waxy.Http.IntegrationTests
 {
     [TestFixture]
-    [Category("Image Locator")]
+    [Category("Slow Integration Files")]
     class SrcImageLocatorTests
     {
         [Test]
