@@ -45,7 +45,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Exceptions\HttpExceptions.cs" />
-    <Compile Include="ImageRequester.cs" />
     <Compile Include="SrcImageLocator.cs" />
     <Compile Include="TextualGetRequest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
