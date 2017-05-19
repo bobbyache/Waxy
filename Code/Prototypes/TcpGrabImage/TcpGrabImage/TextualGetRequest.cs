@@ -41,35 +41,22 @@ namespace CygX1.Waxy.Http
         // http://stackoverflow.com/questions/11296810/how-do-i-implement-ienumerablet
 
         private string templateText;
-        private string[] requestLines;
+        private string requestLine; // this is where you'll do the GET http://... HTTP/1.1
+        private IEnumerable<RequestHeader> requestHeaders;
 
         public TextualGetRequest(string templateText)
         {
             this.templateText = templateText;
+            string[] requestHeaderLines = ProcessTemplateText(templateText);
+            requestHeaders = CreateRequestHeaders(requestHeaderLines);
         }
 
         public string this [string key]
         {
-            get
-            {
-                return RequestHeaders.Where(r => r.Key == key).SingleOrDefault().Value;
-            }
+            get { return RequestHeaders.Where(r => r.Key == key).SingleOrDefault().Value; }
         }
 
-        public IEnumerable<RequestHeader> RequestHeaders
-        {
-            get
-            {
-                if (requestLines == null)
-                    requestLines = ProcessTemplateText(templateText);
-
-                IEnumerable<RequestHeader> requestHeaders = requestLines.Skip(1)
-                                             .Where(s => ValidHeaderLine(s))
-                                             .Select(s => new RequestHeader(s));
-
-                return requestHeaders;
-            }
-        }
+        public IEnumerable<RequestHeader> RequestHeaders { get { return requestHeaders; } }
 
         public string Method { get; internal set; }
         public string RequestUri { get; internal set; }
@@ -94,6 +81,13 @@ namespace CygX1.Waxy.Http
                 return requestLineList.ToArray();
             }
             return null;
+        }
+
+        private IEnumerable<RequestHeader> CreateRequestHeaders(string[] requestHeaderLines)
+        {
+            return requestHeaderLines.Skip(1)
+                             .Where(s => ValidHeaderLine(s))
+                             .Select(s => new RequestHeader(s));
         }
 
         private bool ValidHeaderLine(string requestLine)
