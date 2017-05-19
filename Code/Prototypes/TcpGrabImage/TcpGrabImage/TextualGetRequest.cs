@@ -49,6 +49,11 @@ namespace CygX1.Waxy.Http
             this.templateText = templateText;
             string[] requestHeaderLines = ProcessTemplateText(templateText);
             requestHeaders = CreateRequestHeaders(requestHeaderLines);
+
+            string[] methodParts = ParseGeneralHeaderParts(requestHeaderLines);
+            this.Method = methodParts[0];
+            this.RequestUri = methodParts[1];
+            this.HttpVersion = methodParts[2];
         }
 
         public string this [string key]
@@ -58,9 +63,9 @@ namespace CygX1.Waxy.Http
 
         public IEnumerable<RequestHeader> RequestHeaders { get { return requestHeaders; } }
 
-        public string Method { get; internal set; }
-        public string RequestUri { get; internal set; }
-        public string HttpVersion { get; internal set; }
+        public string Method { get; private set; }
+        public string RequestUri { get; private set; }
+        public string HttpVersion { get; private set; }
 
         private string[] ProcessTemplateText(string templateText)
         {
@@ -88,6 +93,11 @@ namespace CygX1.Waxy.Http
             return requestHeaderLines.Skip(1)
                              .Where(s => ValidHeaderLine(s))
                              .Select(s => new RequestHeader(s));
+        }
+
+        private string[] ParseGeneralHeaderParts(string[] requestHeaderLines)
+        {
+            return requestHeaderLines.First().Trim().Split(' ');
         }
 
         private bool ValidHeaderLine(string requestLine)
