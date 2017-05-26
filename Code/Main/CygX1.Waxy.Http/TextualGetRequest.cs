@@ -15,28 +15,30 @@ namespace CygX1.Waxy.Http
      * Consider decorator actual image request, landing page - referer request.
      * Task with OnCompleted event returns a task... create example and show works with decorator.
      * */
-    public class RequestHeader
-    {
-        internal RequestHeader(string requestLine)
-        {
-            if(string.IsNullOrWhiteSpace(requestLine) || !requestLine.Contains(":") || requestLine.Contains("GET"))
-                throw new InvalidHttpRequestHeader("Invalid request header. Request header string cannot be parsed.");
 
-            int index = requestLine.IndexOf(':', 0);
-
-            this.key = requestLine.Substring(0, index).Trim();
-            this.value = requestLine.Substring(index + 1, requestLine.Length - (index + 1)).Trim();
-        }
-
-        private readonly string key;
-        private readonly string value;
-
-        public string Key { get { return key; } }
-        public string Value { get { return value; } }
-    }
 
     public class TextualGetRequest
     {
+        public class RequestHeader
+        {
+            internal RequestHeader(string requestLine)
+            {
+                if (string.IsNullOrWhiteSpace(requestLine) || !requestLine.Contains(":") || requestLine.Contains("GET"))
+                    throw new InvalidHttpRequestHeader("Invalid request header. Request header string cannot be parsed.");
+
+                int index = requestLine.IndexOf(':', 0);
+
+                this.key = requestLine.Substring(0, index).Trim();
+                this.value = requestLine.Substring(index + 1, requestLine.Length - (index + 1)).Trim();
+            }
+
+            private readonly string key;
+            private readonly string value;
+
+            public string Key { get { return key; } }
+            public string Value { get { return value; } }
+        }
+
         // How do I implement IEnumerable<T>
         // http://stackoverflow.com/questions/11296810/how-do-i-implement-ienumerablet
 
@@ -99,15 +101,16 @@ namespace CygX1.Waxy.Http
         {
             string generalHeader = requestHeaderLines.First().Trim();
             string[] parts = generalHeader.Split(' ');
+            bool isRequestUriPattern = generalHeader.Contains("{{") || generalHeader.Contains("}}");
 
             AssertMethodLine(parts);
 
-            if (generalHeader.Contains("{{") || generalHeader.Contains("}}"))
+            if (isRequestUriPattern)
             {
-                AssertIfLinkPattern(generalHeader);
+                AssertValidRequestUriPattern(generalHeader);
 
                 string headerPattern = ExtractRequestUriPattern(generalHeader);
-                AssertPatternIsNotEmpty(headerPattern);
+                AssertRequestUriPatternIsNotEmpty(headerPattern);
 
                 string[] methodParts = new string[3];
                 methodParts[0] = parts.First();
@@ -128,7 +131,7 @@ namespace CygX1.Waxy.Http
             return headerPattern;
         }
 
-        private static void AssertPatternIsNotEmpty(string headerPattern)
+        private static void AssertRequestUriPatternIsNotEmpty(string headerPattern)
         {
             string pattern = headerPattern.Replace("{{", "");
             pattern = pattern.Replace("}}", "");
@@ -137,7 +140,7 @@ namespace CygX1.Waxy.Http
                 throw new BadRequestUriPatternException("The request uri expression pattern is malformed.");
         }
 
-        private static void AssertIfLinkPattern(string generalHeader)
+        private static void AssertValidRequestUriPattern(string generalHeader)
         {
             if (generalHeader.Contains("{{") && !generalHeader.Contains("}}"))
                 throw new BadRequestUriPatternException("The request uri expression pattern is malformed.");

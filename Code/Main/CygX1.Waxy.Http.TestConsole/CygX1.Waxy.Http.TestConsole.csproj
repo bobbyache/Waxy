@@ -50,7 +50,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\TcpGrabImage\CygX1.Waxy.Http.csproj">
+    <ProjectReference Include="..\CygX1.Waxy.Http\CygX1.Waxy.Http.csproj">
       <Project>{d9190736-afda-4971-9d3d-d5a3e0adf295}</Project>
       <Name>CygX1.Waxy.Http</Name>
     </ProjectReference>

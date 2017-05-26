@@ -53,7 +53,7 @@ namespace CygX1.Waxy.Http.IntegrationTests
             string requestText = TxtFile.ReadText("HTTP_GET_BigBay.txt");
             TextualGetRequest textualGetRequest = new TextualGetRequest(requestText);
 
-            foreach (RequestHeader requestHeader in textualGetRequest.RequestHeaders)
+            foreach (TextualGetRequest.RequestHeader requestHeader in textualGetRequest.RequestHeaders)
                 headers.Add(requestHeader.Key, requestHeader.Value);
 
             Assert.AreEqual("www.wavescape.co.za", headers["Host"]);

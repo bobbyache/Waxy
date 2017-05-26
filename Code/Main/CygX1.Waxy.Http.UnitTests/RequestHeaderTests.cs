@@ -15,7 +15,7 @@ namespace CygX1.Waxy.Http.UnitTests
         public void RequestHeader_ParseHeaderFromRequesHeaderLine()
         {
             string requestHeaderLine = " Host: www.wavescape.co.za ";
-            RequestHeader requestHeader = new RequestHeader(requestHeaderLine);
+            TextualGetRequest.RequestHeader requestHeader = new TextualGetRequest.RequestHeader(requestHeaderLine);
             Assert.AreEqual("Host", requestHeader.Key, "RequestHeader.Key is expected to be 'Host'");
             Assert.AreEqual("www.wavescape.co.za", requestHeader.Value, "RequestHeader.Value is expected to be 'www.wavescape.co.za'");
         }
@@ -24,7 +24,7 @@ namespace CygX1.Waxy.Http.UnitTests
         public void RequestHeader_ParseEmptyHeader_ReturnsEmptyValueText()
         {
             string requestHeaderLine = "Host: ";
-            RequestHeader requestHeader = new RequestHeader(requestHeaderLine);
+            TextualGetRequest.RequestHeader requestHeader = new TextualGetRequest.RequestHeader(requestHeaderLine);
             Assert.AreEqual("Host", requestHeader.Key, "RequestHeader.Key is expected to be 'Host'");
             Assert.AreEqual("", requestHeader.Value, "RequestHeader.Value is expected to be ''");
         }
@@ -33,7 +33,7 @@ namespace CygX1.Waxy.Http.UnitTests
         public void RequestHeader_ParseInvalidEmptyHeader_WithNoColon_Throws_InvalidHttpRequestHeader()
         {
             string requestHeaderLine = "invalid header";
-            Assert.Throws<Exceptions.InvalidHttpRequestHeader>(() => new RequestHeader(requestHeaderLine));
+            Assert.Throws<Exceptions.InvalidHttpRequestHeader>(() => new TextualGetRequest.RequestHeader(requestHeaderLine));
         }
     }
 }
