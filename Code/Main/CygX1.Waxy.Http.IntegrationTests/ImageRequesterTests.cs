@@ -47,6 +47,7 @@ namespace TcpGrabImage.UnitTests
 
             Image img = null;
 
+            // Check this for other options: https://stackoverflow.com/questions/26958829/how-do-i-use-the-new-httpclient-from-windows-web-http-to-download-an-image
             var task = client.SendAsync(request)
                 .ContinueWith((taskwithmsg) =>
                 {

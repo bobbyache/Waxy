@@ -55,6 +55,7 @@
     <Compile Include="TextualGetRequestTests.cs" />
     <Compile Include="Helpers\TxtFile.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WavescapeLandingPageWebcamScraperTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CygX1.Waxy.Http\CygX1.Waxy.Http.csproj">
@@ -76,6 +77,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="HttpRequests\HTTP_GET_BigBay.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HttpRequests\Landing\WavescapeKommetjie.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="HttpRequests\Wavescape_Cam_LandingPage.txt">
