@@ -20,7 +20,7 @@ namespace CygX1.Waxy.Http.UnitTests
 
             Assert.AreEqual("GET", textualGetRequest.Method);
             Assert.AreEqual("http://www.wavescape.co.za/plugins/content/webcam/newfetch.php?pic=bigbay.jpg&tmpl=component&rnd=614786193", textualGetRequest.RequestUri);
-            Assert.AreEqual("HTTP/1.1", textualGetRequest.HttpVersion);
+            Assert.AreEqual("HTTP/1.1", textualGetRequest.HttpVersionText);
         }
 
         [Test]
@@ -37,7 +37,7 @@ namespace CygX1.Waxy.Http.UnitTests
 
             Assert.AreEqual("GET", textualGetRequest.Method);
             Assert.AreEqual("http://www.wavescape.co.za/plugins/content/webcam/newfetch.php?pic=hoek.jpg&rnd=245430611", textualGetRequest.RequestUri);
-            Assert.AreEqual("HTTP/1.1", textualGetRequest.HttpVersion);
+            Assert.AreEqual("HTTP/1.1", textualGetRequest.HttpVersionText);
         }
 
         [Test]
@@ -76,7 +76,7 @@ namespace CygX1.Waxy.Http.UnitTests
 
             Assert.AreEqual("GET", textualGetRequest.Method);
             Assert.AreEqual(@"{{https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)bigbay.jpg&rnd=[0-9]*}}", textualGetRequest.RequestUri);
-            Assert.AreEqual("HTTP/1.1", textualGetRequest.HttpVersion);
+            Assert.AreEqual("HTTP/1.1", textualGetRequest.HttpVersionText);
         }
 
         [Test]

@@ -1,4 +1,5 @@
 ﻿using NUnit.Framework;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -73,7 +74,17 @@ namespace CygX1.Waxy.Http.IntegrationTests
 
             Assert.AreEqual("GET", textualGetRequest.Method);
             Assert.AreEqual("http://www.wavescape.co.za/plugins/content/webcam/newfetch.php?pic=bigbay.jpg&tmpl=component&rnd=614786193", textualGetRequest.RequestUri);
-            Assert.AreEqual("HTTP/1.1", textualGetRequest.HttpVersion);
+            Assert.AreEqual("HTTP/1.1", textualGetRequest.HttpVersionText);
+        }
+
+        [Test]
+        public void TestGetRequest_ParseHttpVersion_Returns_CorrectVersion()
+        {
+            // No need to go scrape the link.
+            string requestText = TxtFile.ReadText("HTTP_GET_BigBay.txt");
+            TextualGetRequest textualGetRequest = new TextualGetRequest(requestText);
+
+            Assert.AreEqual(new Version(1, 1), textualGetRequest.HttpVersion);
         }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using CygX1.Waxy.Http.Exceptions;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -55,7 +56,7 @@ namespace CygX1.Waxy.Http
             string[] methodParts = ParseGeneralHeaderParts(requestHeaderLines);
             this.Method = methodParts[0];
             this.RequestUri = methodParts[1];
-            this.HttpVersion = methodParts[2];
+            this.HttpVersionText = methodParts[2];
         }
 
         public string this [string key]
@@ -67,7 +68,15 @@ namespace CygX1.Waxy.Http
 
         public string Method { get; private set; }
         public string RequestUri { get; private set; }
-        public string HttpVersion { get; private set; }
+        public string HttpVersionText { get; private set; }
+        public Version HttpVersion
+        {
+            get
+            {
+                string[] versionArr = this.HttpVersionText.Split(new char[] { '/' });
+                return new Version(versionArr[1]);
+            }
+        }
 
         private string[] ProcessTemplateText(string templateText)
         {

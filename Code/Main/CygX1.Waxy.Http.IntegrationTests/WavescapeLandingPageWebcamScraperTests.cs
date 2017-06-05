@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace CygX1.Waxy.Http.IntegrationTests
@@ -14,12 +15,13 @@ namespace CygX1.Waxy.Http.IntegrationTests
         [Test]
         public void WavescapeLandingPageWebcamScraper_Scrape_MuizenbergCorner()
         {
-            string requestText = TxtFile.ReadText("HTTP_GET_BigBay.txt");
+            string requestText = TxtFile.ReadText(@"Landing\WavescapeMuiziesCorner.txt");
             string regEx = @"https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)mbcorner.jpg&rnd=[0-9]*";
             WavescapeLandingPageWebcamScraper scraper = new WavescapeLandingPageWebcamScraper(requestText, regEx);
             string imageUrl = scraper.Scrape();
             Assert.IsTrue(imageUrl.Contains("rnd="));
             Assert.IsTrue(imageUrl.Contains("mbcorner.jpg"));
+            Assert.IsTrue(IsValidHyperlink(imageUrl));
         }
 
         [Test]
@@ -31,6 +33,13 @@ namespace CygX1.Waxy.Http.IntegrationTests
             string imageUrl = scraper.Scrape();
             Assert.IsTrue(imageUrl.Contains("rnd="));
             Assert.IsTrue(imageUrl.Contains("kom.jpg"));
+            // You might want to test for this:
+            Assert.IsTrue(IsValidHyperlink(imageUrl));
+        }
+
+        private bool IsValidHyperlink(string urlText)
+        {
+            return Regex.Match(urlText, @"https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)").Success;
         }
     }
 }

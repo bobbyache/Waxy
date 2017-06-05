@@ -82,6 +82,9 @@
     <Content Include="HttpRequests\Landing\WavescapeKommetjie.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="HttpRequests\Landing\WavescapeMuiziesCorner.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="HttpRequests\Wavescape_Cam_LandingPage.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

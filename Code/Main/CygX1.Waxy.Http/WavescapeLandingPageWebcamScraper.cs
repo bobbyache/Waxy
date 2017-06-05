@@ -12,7 +12,6 @@ namespace CygX1.Waxy.Http
     {
         private string regEx;
         private TextualGetRequest textualGetRequest = null;
-        
 
         public WavescapeLandingPageWebcamScraper(string getRequestText, string regEx)
         {
@@ -22,6 +21,7 @@ namespace CygX1.Waxy.Http
 
         internal string Scrape()
         {
+            // decompress what is returned... this might not be needed... investigate what should happen if we don't need it.
             HttpClientHandler handler = new HttpClientHandler();
             handler.AutomaticDecompression = System.Net.DecompressionMethods.GZip | System.Net.DecompressionMethods.Deflate;
 
@@ -30,19 +30,17 @@ namespace CygX1.Waxy.Http
             {
                 RequestUri = new Uri(this.textualGetRequest.RequestUri),
                 Method = HttpMethod.Get,
-                Version = new Version("1.1")
+                Version = this.textualGetRequest.HttpVersion
             };
 
             foreach (TextualGetRequest.RequestHeader header in this.textualGetRequest.RequestHeaders)
-            {
                 request.Headers.Add(header.Key, header.Value);
-            }
 
             string src = null;
             var task = client.SendAsync(request)
-            .ContinueWith((taskwithmsg) =>
+            .ContinueWith((responseTask) =>
             {
-                var response = taskwithmsg.Result;
+                var response = responseTask.Result;
                 string txt = response.Content.ReadAsStringAsync().Result;
 
                 SrcImageLocator srcImageLocator = new SrcImageLocator(txt, this.regEx);
