@@ -68,6 +68,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Files\HttpRequests\SrcTarget\WavescapeKommetjie.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Files\ScrapeHtml\BigBay_LandingPage_Full.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

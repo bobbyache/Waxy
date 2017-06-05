@@ -29,4 +29,13 @@ namespace CygX1.Waxy.Http.Exceptions
         public BadRequestMethodLineException(string message, Exception inner) : base(message, inner) { }
         public BadRequestMethodLineException(SerializationInfo info, StreamingContext context) : base(info, context) { }
     }
+
+    [Serializable()]
+    public class BadImageUriException : Exception, ISerializable
+    {
+        public BadImageUriException() { }
+        public BadImageUriException(string message) : base(message) { }
+        public BadImageUriException(string message, Exception inner) : base(message, inner) { }
+        public BadImageUriException(SerializationInfo info, StreamingContext context) : base(info, context) { }
+    }
 }

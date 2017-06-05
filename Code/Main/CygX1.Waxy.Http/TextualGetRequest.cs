@@ -67,7 +67,7 @@ namespace CygX1.Waxy.Http
         public IEnumerable<RequestHeader> RequestHeaders { get { return requestHeaders; } }
 
         public string Method { get; private set; }
-        public string RequestUri { get; private set; }
+        public string RequestUri { get; set; }
         public string HttpVersionText { get; private set; }
         public Version HttpVersion
         {
