@@ -35,7 +35,7 @@ namespace CygX1.Waxy.Http.IntegrationTests
         }
 
         [Test]
-        [Category("Slow Integration Downloads")]
+        [Category("Sensitive Slow Integration Downloads")]
         public void WavescapeImageDownloader_WhenDownloaded_RetrievesValidImage()
         {
             string scrapeRequestText = TxtFile.ReadText(@"Files\HttpRequests\Landing\WavescapeKommetjie.txt");

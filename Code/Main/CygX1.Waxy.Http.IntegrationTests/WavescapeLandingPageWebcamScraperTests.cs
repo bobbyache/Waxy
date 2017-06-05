@@ -13,6 +13,7 @@ namespace CygX1.Waxy.Http.IntegrationTests
     class WavescapeLandingPageWebcamScraperTests
     {
         [Test]
+        [Category("Sensitive Slow Integration Downloads")]
         public void WavescapeLandingPageWebcamScraper_Scrape_MuizenbergCorner()
         {
             string requestText = TxtFile.ReadText(@"Files\HttpRequests\Landing\WavescapeMuiziesCorner.txt");
@@ -25,6 +26,7 @@ namespace CygX1.Waxy.Http.IntegrationTests
         }
 
         [Test]
+        [Category("Sensitive Slow Integration Downloads")]
         public void WavescapeLandingPageWebcamScraper_Scrape_Kommetjie()
         {
             string requestText = TxtFile.ReadText(@"Files\HttpRequests\Landing\WavescapeKommetjie.txt");
