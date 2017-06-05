@@ -15,7 +15,7 @@ namespace CygX1.Waxy.Http.IntegrationTests
         [Test]
         public void WavescapeLandingPageWebcamScraper_Scrape_MuizenbergCorner()
         {
-            string requestText = TxtFile.ReadText(@"Landing\WavescapeMuiziesCorner.txt");
+            string requestText = TxtFile.ReadText(@"Files\HttpRequests\Landing\WavescapeMuiziesCorner.txt");
             string regEx = @"https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)mbcorner.jpg&rnd=[0-9]*";
             WavescapeLandingPageWebcamScraper scraper = new WavescapeLandingPageWebcamScraper(requestText, regEx);
             string imageUrl = scraper.Scrape();
@@ -27,7 +27,7 @@ namespace CygX1.Waxy.Http.IntegrationTests
         [Test]
         public void WavescapeLandingPageWebcamScraper_Scrape_Kommetjie()
         {
-            string requestText = TxtFile.ReadText(@"Landing\WavescapeKommetjie.txt");
+            string requestText = TxtFile.ReadText(@"Files\HttpRequests\Landing\WavescapeKommetjie.txt");
             string regEx = @"https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)kom.jpg&rnd=[0-9]*";
             WavescapeLandingPageWebcamScraper scraper = new WavescapeLandingPageWebcamScraper(requestText, regEx);
             string imageUrl = scraper.Scrape();

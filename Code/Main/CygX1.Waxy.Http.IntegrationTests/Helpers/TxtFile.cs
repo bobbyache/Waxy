@@ -8,7 +8,7 @@ namespace CygX1.Waxy.Http.IntegrationTests
 
         public static string GetFolder()
         {
-            return Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "HttpRequests");
+            return Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
         }
 
         public static string ResolvePath(string fileName)

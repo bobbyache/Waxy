@@ -35,7 +35,7 @@ namespace CygX1.Waxy.Http.IntegrationTests
         [Test]
         public void TextualGetRequest_GetHeaderValues_Via_IndexerProperties()
         {
-            string requestText = TxtFile.ReadText("HTTP_GET_BigBay.txt");
+            string requestText = TxtFile.ReadText(@"Files\HttpRequests\HTTP_GET_BigBay.txt");
             TextualGetRequest textualGetRequest = new TextualGetRequest(requestText);
 
             Assert.AreEqual("www.wavescape.co.za", textualGetRequest["Host"]);
@@ -51,7 +51,7 @@ namespace CygX1.Waxy.Http.IntegrationTests
         {
             Dictionary<string, string> headers = new Dictionary<string, string>();
 
-            string requestText = TxtFile.ReadText("HTTP_GET_BigBay.txt");
+            string requestText = TxtFile.ReadText(@"Files\HttpRequests\HTTP_GET_BigBay.txt");
             TextualGetRequest textualGetRequest = new TextualGetRequest(requestText);
 
             foreach (TextualGetRequest.RequestHeader requestHeader in textualGetRequest.RequestHeaders)
@@ -69,7 +69,7 @@ namespace CygX1.Waxy.Http.IntegrationTests
         public void TextualGetRequest_ParseGetHeader_WithDirectLink_IsParsedCorrectly()
         {
             // No need to go scrape the link.
-            string requestText = TxtFile.ReadText("HTTP_GET_BigBay.txt");
+            string requestText = TxtFile.ReadText(@"Files\HttpRequests\HTTP_GET_BigBay.txt");
             TextualGetRequest textualGetRequest = new TextualGetRequest(requestText);
 
             Assert.AreEqual("GET", textualGetRequest.Method);
@@ -81,7 +81,7 @@ namespace CygX1.Waxy.Http.IntegrationTests
         public void TestGetRequest_ParseHttpVersion_Returns_CorrectVersion()
         {
             // No need to go scrape the link.
-            string requestText = TxtFile.ReadText("HTTP_GET_BigBay.txt");
+            string requestText = TxtFile.ReadText(@"Files\HttpRequests\HTTP_GET_BigBay.txt");
             TextualGetRequest textualGetRequest = new TextualGetRequest(requestText);
 
             Assert.AreEqual(new Version(1, 1), textualGetRequest.HttpVersion);

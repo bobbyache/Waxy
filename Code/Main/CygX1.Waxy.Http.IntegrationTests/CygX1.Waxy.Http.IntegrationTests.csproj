@@ -55,6 +55,7 @@
     <Compile Include="TextualGetRequestTests.cs" />
     <Compile Include="Helpers\TxtFile.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WavescapeImageDownloaderTests.cs" />
     <Compile Include="WavescapeLandingPageWebcamScraperTests.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -67,25 +68,25 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="HttpRequests\FakeLandingPage_Full.txt">
+    <Content Include="Files\ScrapeHtml\BigBay_LandingPage_Full.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="HttpRequests\FakeLandingPage_Partial.txt">
+    <Content Include="Files\ScrapeHtml\BigBay_LandingPage_Partial.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="HttpRequests\HTTP_GET_BigBay_Referer.txt">
+    <Content Include="Files\HttpRequests\SrcTarget\WavescapeBigBay.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="HttpRequests\HTTP_GET_BigBay.txt">
+    <Content Include="Files\HttpRequests\HTTP_GET_BigBay.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="HttpRequests\Landing\WavescapeKommetjie.txt">
+    <Content Include="Files\HttpRequests\Landing\WavescapeKommetjie.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="HttpRequests\Landing\WavescapeMuiziesCorner.txt">
+    <Content Include="Files\HttpRequests\Landing\WavescapeMuiziesCorner.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="HttpRequests\Wavescape_Cam_LandingPage.txt">
+    <Content Include="Files\HttpRequests\Wavescape_Cam_LandingPage.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
