@@ -1,9 +1,0 @@
-﻿GET http://www.wavescape.co.za/plugins/content/webcam/newfetch.php?pic=bigbay.jpg&tmpl=component&rnd=614786193 HTTP/1.1
-Host: www.wavescape.co.za
-User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
-Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
-Referer: http://www.wavescape.co.za/tools/webcams/big-bay.html
-Accept-Encoding: gzip, deflate, sdch
-Accept-Language: en-US,en;q=0.8
-
-

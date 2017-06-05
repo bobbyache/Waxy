@@ -77,16 +77,10 @@
     <Content Include="Files\HttpRequests\SrcTarget\WavescapeBigBay.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Files\HttpRequests\HTTP_GET_BigBay.txt">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
     <Content Include="Files\HttpRequests\Landing\WavescapeKommetjie.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Files\HttpRequests\Landing\WavescapeMuiziesCorner.txt">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Files\HttpRequests\Wavescape_Cam_LandingPage.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

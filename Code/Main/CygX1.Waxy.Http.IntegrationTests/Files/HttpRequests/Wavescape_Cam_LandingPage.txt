@@ -1,9 +1,0 @@
-﻿GET http://www.wavescape.co.za/tools/webcams/big-bay.html HTTP/1.1
-Host: www.wavescape.co.za
-Connection: keep-alive
-Upgrade-Insecure-Requests: 1
-User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
-Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
-Accept-Encoding: gzip, deflate, sdch
-Accept-Language: en-US,en;q=0.8
-Cookie: dm_tabs_1=0; dd_aidapage50367=0; _em_vt=baedf6b62216941a2b747557474258b43758412791-135787325911f7c8; _em_v=03bd2aeff8907d1c0c8f93586ecc5911f557c67631-704370325911f7c8; _ga=GA1.3.400437215.1488208292; _gid=GA1.3.660464898.1494350075

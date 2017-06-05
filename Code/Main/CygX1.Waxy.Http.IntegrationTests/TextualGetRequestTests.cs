@@ -35,7 +35,7 @@ namespace CygX1.Waxy.Http.IntegrationTests
         [Test]
         public void TextualGetRequest_GetHeaderValues_Via_IndexerProperties()
         {
-            string requestText = TxtFile.ReadText(@"Files\HttpRequests\HTTP_GET_BigBay.txt");
+            string requestText = TxtFile.ReadText(@"Files\HttpRequests\SrcTarget\WavescapeBigBay.txt");
             TextualGetRequest textualGetRequest = new TextualGetRequest(requestText);
 
             Assert.AreEqual("www.wavescape.co.za", textualGetRequest["Host"]);
@@ -51,7 +51,7 @@ namespace CygX1.Waxy.Http.IntegrationTests
         {
             Dictionary<string, string> headers = new Dictionary<string, string>();
 
-            string requestText = TxtFile.ReadText(@"Files\HttpRequests\HTTP_GET_BigBay.txt");
+            string requestText = TxtFile.ReadText(@"Files\HttpRequests\SrcTarget\WavescapeBigBay.txt");
             TextualGetRequest textualGetRequest = new TextualGetRequest(requestText);
 
             foreach (TextualGetRequest.RequestHeader requestHeader in textualGetRequest.RequestHeaders)
@@ -69,11 +69,11 @@ namespace CygX1.Waxy.Http.IntegrationTests
         public void TextualGetRequest_ParseGetHeader_WithDirectLink_IsParsedCorrectly()
         {
             // No need to go scrape the link.
-            string requestText = TxtFile.ReadText(@"Files\HttpRequests\HTTP_GET_BigBay.txt");
+            string requestText = TxtFile.ReadText(@"Files\HttpRequests\SrcTarget\WavescapeBigBay.txt");
             TextualGetRequest textualGetRequest = new TextualGetRequest(requestText);
 
             Assert.AreEqual("GET", textualGetRequest.Method);
-            Assert.AreEqual("http://www.wavescape.co.za/plugins/content/webcam/newfetch.php?pic=bigbay.jpg&tmpl=component&rnd=614786193", textualGetRequest.RequestUri);
+            Assert.AreEqual(@"{{https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)bigbay.jpg&rnd=[0-9]*}}", textualGetRequest.RequestUri);
             Assert.AreEqual("HTTP/1.1", textualGetRequest.HttpVersionText);
         }
 
@@ -81,7 +81,7 @@ namespace CygX1.Waxy.Http.IntegrationTests
         public void TestGetRequest_ParseHttpVersion_Returns_CorrectVersion()
         {
             // No need to go scrape the link.
-            string requestText = TxtFile.ReadText(@"Files\HttpRequests\HTTP_GET_BigBay.txt");
+            string requestText = TxtFile.ReadText(@"Files\HttpRequests\SrcTarget\WavescapeBigBay.txt");
             TextualGetRequest textualGetRequest = new TextualGetRequest(requestText);
 
             Assert.AreEqual(new Version(1, 1), textualGetRequest.HttpVersion);
