@@ -41,7 +41,7 @@ namespace CygX1.Waxy.Http.IntegrationTests
             Assert.AreEqual("www.wavescape.co.za", textualGetRequest["Host"]);
             Assert.AreEqual("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36", textualGetRequest["User-Agent"]);
             Assert.AreEqual("text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8", textualGetRequest["Accept"]);
-            Assert.AreEqual("http://www.wavescape.co.za/tools/webcams/big-bay.html", textualGetRequest["Referer"]);
+            Assert.AreEqual("https://www.wavescape.co.za/tools/webcams/big-bay.html", textualGetRequest["Referer"]);
             Assert.AreEqual("gzip, deflate, sdch", textualGetRequest["Accept-Encoding"]);
             Assert.AreEqual("en-US,en;q=0.8", textualGetRequest["Accept-Language"]);
         }
@@ -60,7 +60,7 @@ namespace CygX1.Waxy.Http.IntegrationTests
             Assert.AreEqual("www.wavescape.co.za", headers["Host"]);
             Assert.AreEqual("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36", headers["User-Agent"]);
             Assert.AreEqual("text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8", headers["Accept"]);
-            Assert.AreEqual("http://www.wavescape.co.za/tools/webcams/big-bay.html", headers["Referer"]);
+            Assert.AreEqual("https://www.wavescape.co.za/tools/webcams/big-bay.html", headers["Referer"]);
             Assert.AreEqual("gzip, deflate, sdch", headers["Accept-Encoding"]);
             Assert.AreEqual("en-US,en;q=0.8", headers["Accept-Language"]);
         }

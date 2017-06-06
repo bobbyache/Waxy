@@ -68,6 +68,12 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Files\HttpRequests\Landing\SampleImageLandingPage.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\HttpRequests\SrcTarget\SampleImageSrc.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Files\HttpRequests\SrcTarget\WavescapeKommetjie.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

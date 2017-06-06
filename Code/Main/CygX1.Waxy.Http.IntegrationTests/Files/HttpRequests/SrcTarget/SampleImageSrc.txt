@@ -1,0 +1,9 @@
+﻿GET http://sat.greatstock.co.za/comps/SAT-000-1179G.jpg HTTP/1.1
+Host: sat.greatstock.co.za
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36
+Accept: image/webp,image/*,*/*;q=0.8
+Referer: http://sat.greatstock.co.za/preview.aspx?ci=1224&uid=201766173852894590
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: en-US,en;q=0.8
+

@@ -20,7 +20,7 @@ namespace CygX1.Waxy.Http
             this.textualGetRequest = new TextualGetRequest(requestTemplateText);
 
             string pattern = textualGetRequest.RequestUri.Replace("{{", "").Replace("}}", "");
-            SrcImageLocator imageLocator = new SrcImageLocator(imageUrl, pattern);
+            SrcImageLocator imageLocator = new SrcImageLocator(textualGetRequest["Referer"], imageUrl, pattern);
             string checkImageUrl = imageLocator.GetFirstMatch();
             if (checkImageUrl != imageUrl)
                 throw new Exceptions.BadImageUriException("Image URL does not match the image URL template pattern.");
@@ -33,10 +33,6 @@ namespace CygX1.Waxy.Http
 
         public Image Download()
         {
-            //HttpClientHandler handler = new HttpClientHandler();
-            //handler.AutomaticDecompression = System.Net.DecompressionMethods.GZip | System.Net.DecompressionMethods.Deflate;
-
-            //var client = new HttpClient(handler);
             var client = new HttpClient();
             var request = new HttpRequestMessage
             {
@@ -55,6 +51,8 @@ namespace CygX1.Waxy.Http
                 .ContinueWith((taskwithmsg) =>
                 {
                     var response = taskwithmsg.Result;
+                    //var imageExtension = GetImageExtensionFromContentType(response.Content.Headers.ContentType.ToString())
+
                     Task<byte[]> taskByteArray = response.Content.ReadAsByteArrayAsync();
                     taskByteArray.Wait();
 

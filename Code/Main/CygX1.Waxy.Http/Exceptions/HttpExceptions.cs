@@ -38,4 +38,14 @@ namespace CygX1.Waxy.Http.Exceptions
         public BadImageUriException(string message, Exception inner) : base(message, inner) { }
         public BadImageUriException(SerializationInfo info, StreamingContext context) : base(info, context) { }
     }
+
+    [Serializable()]
+    public class AbsoluteUrlCombineFailureException : Exception, ISerializable
+    {
+        public AbsoluteUrlCombineFailureException() { }
+        public AbsoluteUrlCombineFailureException(string message) : base(message) { }
+        public AbsoluteUrlCombineFailureException(string message, Exception inner) : base(message, inner) { }
+        public AbsoluteUrlCombineFailureException(SerializationInfo info, StreamingContext context) : base(info, context) { }
+    }
+
 }

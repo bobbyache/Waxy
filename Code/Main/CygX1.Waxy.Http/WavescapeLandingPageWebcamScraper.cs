@@ -43,7 +43,7 @@ namespace CygX1.Waxy.Http
                 var response = responseTask.Result;
                 string txt = response.Content.ReadAsStringAsync().Result;
 
-                SrcImageLocator srcImageLocator = new SrcImageLocator(txt, this.regEx);
+                SrcImageLocator srcImageLocator = new SrcImageLocator(textualGetRequest["Referer"], txt, this.regEx);
                 src = srcImageLocator.GetFirstMatch();
             });
             task.Wait();

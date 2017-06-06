@@ -54,5 +54,26 @@ namespace CygX1.Waxy.Http.IntegrationTests
 
             Assert.IsNotNull(bitmap);
         }
+
+        [Test]
+        [Category("Slow Integration Downloads")]
+        public void GenericImageDownloader_WhenDownloaded_RetrievesValidImageExtension_UsingContentType()
+        {
+            string scrapeRequestText = TxtFile.ReadText(@"Files\HttpRequests\Landing\SampleImageLandingPage.txt");
+            string imageFetchRequestText = TxtFile.ReadText(@"Files\HttpRequests\SrcTarget\SampleImageSrc.txt");
+            string regEx = @"comps/[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)";
+
+            WavescapeLandingPageWebcamScraper scraper = new WavescapeLandingPageWebcamScraper(scrapeRequestText, regEx);
+            string imageUrl = scraper.Scrape();
+
+            WavescapeImageDownloader downloader = new WavescapeImageDownloader(imageFetchRequestText, imageUrl);
+            Image image = downloader.Download();
+
+            Bitmap bitmap = new Bitmap(image);
+
+            bitmap.Save(@"C:\Users\robertb\Documents\Work\generic_image.jpg", ImageFormat.Jpeg);
+
+            Assert.IsNotNull(bitmap);
+        }
     }
 }
