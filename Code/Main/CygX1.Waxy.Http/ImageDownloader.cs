@@ -11,6 +11,8 @@ namespace CygX1.Waxy.Http
         private string imageUrl;
         private TextualGetRequest textualGetRequest = null;
 
+        public string ImageUrl { get { return this.imageUrl; } }
+
         public ImageDownloader(string requestTemplateText, string imageUrl)
         {
             
@@ -25,8 +27,6 @@ namespace CygX1.Waxy.Http
             this.textualGetRequest.RequestUri = imageUrl;
             this.imageUrl = imageUrl;
         }
-
-        public object ImageUrl { get { return this.imageUrl; } }
 
         public WebImage Download()
         {
