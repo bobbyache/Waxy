@@ -1,19 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
 using System.Net.Http;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CygX1.Waxy.Http
 {
-    public class WavescapeLandingPageWebcamScraper
+    public class ImagePageScraper
     {
         private string regEx;
         private TextualGetRequest textualGetRequest = null;
 
-        public WavescapeLandingPageWebcamScraper(string getRequestText, string regEx)
+        public ImagePageScraper(string getRequestText, string regEx)
         {
             this.textualGetRequest = new TextualGetRequest(getRequestText);
             this.regEx = regEx;

@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CygX1.Waxy.Http
 {
@@ -21,7 +17,7 @@ namespace CygX1.Waxy.Http
                 string fileName = 
                     EnsureTwoCharacters(TimeTaken.Hour) + "-" +
                     EnsureTwoCharacters(TimeTaken.Minute) + "-" +
-                    EnsureTwoCharacters(TimeTaken.Second) + this.Extension; // ".jpg"; // + AddDotOrNot(extension); 
+                    EnsureTwoCharacters(TimeTaken.Second) + this.Extension; // ".jpg";
 
                 return fileName;
             }

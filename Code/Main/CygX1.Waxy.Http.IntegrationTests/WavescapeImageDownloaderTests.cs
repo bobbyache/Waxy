@@ -1,12 +1,6 @@
 ﻿using NUnit.Framework;
-using System;
-using System.Collections.Generic;
 using System.Drawing;
-using System.Drawing.Imaging;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CygX1.Waxy.Http.IntegrationTests
 {
@@ -21,7 +15,7 @@ namespace CygX1.Waxy.Http.IntegrationTests
             string imageUrl = @"http://www.testdomain.co.za/plugins/content/webcam/newfetch.php?pic=muizies.jpg&rnd=614786193";
             string requestTemplateText = TxtFile.ReadText(@"Files\HttpRequests\SrcTarget\WavescapeBigBay.txt"); ;
 
-            Assert.Throws<Exceptions.BadImageUriException>(() => new WavescapeImageDownloader(requestTemplateText, imageUrl));
+            Assert.Throws<Exceptions.BadImageUriException>(() => new ImageDownloader(requestTemplateText, imageUrl));
         }
 
         [Test]
@@ -31,7 +25,7 @@ namespace CygX1.Waxy.Http.IntegrationTests
             string imageUrl = @"http://www.wavescape.co.za/plugins/content/webcam/newfetch.php?pic=bigbay.jpg&rnd=614786193";
             string requestTemplateText = TxtFile.ReadText(@"Files\HttpRequests\SrcTarget\WavescapeBigBay.txt"); ;
 
-            WavescapeImageDownloader imageDownloader = new WavescapeImageDownloader(requestTemplateText, imageUrl);
+            ImageDownloader imageDownloader = new ImageDownloader(requestTemplateText, imageUrl);
             Assert.AreEqual(imageUrl, imageDownloader.ImageUrl);
         }
 
@@ -43,11 +37,11 @@ namespace CygX1.Waxy.Http.IntegrationTests
             string imageFetchRequestText = TxtFile.ReadText(@"Files\HttpRequests\SrcTarget\WavescapeKommetjie.txt");
             string regEx = @"https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)kom.jpg&rnd=[0-9]*";
 
-            WavescapeLandingPageWebcamScraper scraper = new WavescapeLandingPageWebcamScraper(scrapeRequestText, regEx);
+            ImagePageScraper scraper = new ImagePageScraper(scrapeRequestText, regEx);
             string imageUrl = scraper.Scrape();
 
-            WavescapeImageDownloader downloader = new WavescapeImageDownloader(imageFetchRequestText, imageUrl);
-            WebImage webImage = downloader.Download();
+            ImageDownloader imageDownloader = new ImageDownloader(imageFetchRequestText, imageUrl);
+            WebImage webImage = imageDownloader.Download();
 
             Bitmap bitmap = new Bitmap(webImage.Image);
             bitmap.Save(Path.Combine(@"C:\Users\robertb\Documents\Work", webImage.FileName));
@@ -63,11 +57,11 @@ namespace CygX1.Waxy.Http.IntegrationTests
             string imageFetchRequestText = TxtFile.ReadText(@"Files\HttpRequests\SrcTarget\SampleImageSrc.txt");
             string regEx = @"comps/[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)";
 
-            WavescapeLandingPageWebcamScraper scraper = new WavescapeLandingPageWebcamScraper(scrapeRequestText, regEx);
+            ImagePageScraper scraper = new ImagePageScraper(scrapeRequestText, regEx);
             string imageUrl = scraper.Scrape();
 
-            WavescapeImageDownloader downloader = new WavescapeImageDownloader(imageFetchRequestText, imageUrl);
-            WebImage webImage = downloader.Download();
+            ImageDownloader imageDownloader = new ImageDownloader(imageFetchRequestText, imageUrl);
+            WebImage webImage = imageDownloader.Download();
 
             Bitmap bitmap = new Bitmap(webImage.Image);
             bitmap.Save(Path.Combine(@"C:\Users\robertb\Documents\Work", webImage.FileName));

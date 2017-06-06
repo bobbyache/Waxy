@@ -1,20 +1,17 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
-using System.Linq;
 using System.Net.Http;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace CygX1.Waxy.Http
 {
-    class WavescapeImageDownloader
+    class ImageDownloader
     {
         private string imageUrl;
         private TextualGetRequest textualGetRequest = null;
 
-        public WavescapeImageDownloader(string requestTemplateText, string imageUrl)
+        public ImageDownloader(string requestTemplateText, string imageUrl)
         {
             
             this.textualGetRequest = new TextualGetRequest(requestTemplateText);
