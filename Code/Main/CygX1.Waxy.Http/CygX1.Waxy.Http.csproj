@@ -45,11 +45,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Exceptions\HttpExceptions.cs" />
+    <Compile Include="ImageFormatResolver.cs" />
     <Compile Include="SrcImageLocator.cs" />
     <Compile Include="TextualGetRequest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WavescapeImageDownloader.cs" />
     <Compile Include="WavescapeLandingPageWebcamScraper.cs" />
+    <Compile Include="WebImage.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

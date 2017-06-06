@@ -50,6 +50,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ImageFormatResolverTests.cs" />
     <Compile Include="ImageRequesterTests.cs" />
     <Compile Include="SrcImageLocatorTests.cs" />
     <Compile Include="TextualGetRequestTests.cs" />

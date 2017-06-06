@@ -31,7 +31,7 @@ namespace CygX1.Waxy.Http
 
         public object ImageUrl { get { return this.imageUrl; } }
 
-        public Image Download()
+        public WebImage Download()
         {
             var client = new HttpClient();
             var request = new HttpRequestMessage
@@ -45,13 +45,14 @@ namespace CygX1.Waxy.Http
                 request.Headers.Add(header.Key, header.Value);
 
             Image img = null;
+            string extension = null;
 
             // Check this for other options: https://stackoverflow.com/questions/26958829/how-do-i-use-the-new-httpclient-from-windows-web-http-to-download-an-image
             var task = client.SendAsync(request)
                 .ContinueWith((taskwithmsg) =>
                 {
                     var response = taskwithmsg.Result;
-                    //var imageExtension = GetImageExtensionFromContentType(response.Content.Headers.ContentType.ToString())
+                    extension = ImageFormatResolver.ResolveExtension(response.Content.Headers.ContentType.ToString());
 
                     Task<byte[]> taskByteArray = response.Content.ReadAsByteArrayAsync();
                     taskByteArray.Wait();
@@ -63,7 +64,7 @@ namespace CygX1.Waxy.Http
                 });
             task.Wait();
 
-            return img;
+            return new WebImage(img, extension, DateTime.Now);
         }
     }
 }

@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Drawing.Imaging;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -46,11 +47,10 @@ namespace CygX1.Waxy.Http.IntegrationTests
             string imageUrl = scraper.Scrape();
 
             WavescapeImageDownloader downloader = new WavescapeImageDownloader(imageFetchRequestText, imageUrl);
-            Image image = downloader.Download();
+            WebImage webImage = downloader.Download();
 
-            Bitmap bitmap = new Bitmap(image);
-
-            bitmap.Save(@"C:\Users\robertb\Documents\Work\test.jpg", ImageFormat.Jpeg);
+            Bitmap bitmap = new Bitmap(webImage.Image);
+            bitmap.Save(Path.Combine(@"C:\Users\robertb\Documents\Work", webImage.FileName));
 
             Assert.IsNotNull(bitmap);
         }
@@ -67,11 +67,10 @@ namespace CygX1.Waxy.Http.IntegrationTests
             string imageUrl = scraper.Scrape();
 
             WavescapeImageDownloader downloader = new WavescapeImageDownloader(imageFetchRequestText, imageUrl);
-            Image image = downloader.Download();
+            WebImage webImage = downloader.Download();
 
-            Bitmap bitmap = new Bitmap(image);
-
-            bitmap.Save(@"C:\Users\robertb\Documents\Work\generic_image.jpg", ImageFormat.Jpeg);
+            Bitmap bitmap = new Bitmap(webImage.Image);
+            bitmap.Save(Path.Combine(@"C:\Users\robertb\Documents\Work", webImage.FileName));
 
             Assert.IsNotNull(bitmap);
         }
