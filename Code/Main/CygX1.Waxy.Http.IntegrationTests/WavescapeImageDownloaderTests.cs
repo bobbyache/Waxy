@@ -35,7 +35,7 @@ namespace CygX1.Waxy.Http.IntegrationTests
         {
             string scrapeRequestText = TxtFile.ReadText(@"Files\HttpRequests\Landing\WavescapeKommetjie.txt");
             string imageFetchRequestText = TxtFile.ReadText(@"Files\HttpRequests\SrcTarget\WavescapeKommetjie.txt");
-            string regEx = @"https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)kom.jpg&rnd=[0-9]*";
+            string regEx = @"https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)pic=lastword.jpg&rnd=[0-9]*";
 
             ImagePageScraper scraper = new ImagePageScraper(scrapeRequestText, regEx);
             string imageUrl = scraper.Scrape();
@@ -44,7 +44,7 @@ namespace CygX1.Waxy.Http.IntegrationTests
             WebImage webImage = imageDownloader.Download();
 
             Bitmap bitmap = new Bitmap(webImage.Image);
-            bitmap.Save(Path.Combine(@"C:\Users\robertb\Documents\Work", webImage.FileName));
+            bitmap.Save(Path.Combine(@"C:\Users\RobB\Desktop\Queries", webImage.FileName));
 
             Assert.IsNotNull(bitmap);
         }

@@ -16,6 +16,15 @@ namespace CygX1.Waxy.Http
 
         internal string Scrape()
         {
+            /*
+             * So how does this work?
+             * 1. A request is made to the landing page.
+             * 2. The HTML is retrieved for that page. 
+             * 3. SrcImageLocator searches for the target image link in order to target the randomly generated image based on a pattern.
+             * 4. Image is downloaded.
+             * This is a very focused series of execution... for a specific target.
+             * */
+
             // decompress what is returned... this might not be needed... investigate what should happen if we don't need it.
             HttpClientHandler handler = new HttpClientHandler();
             handler.AutomaticDecompression = System.Net.DecompressionMethods.GZip | System.Net.DecompressionMethods.Deflate;

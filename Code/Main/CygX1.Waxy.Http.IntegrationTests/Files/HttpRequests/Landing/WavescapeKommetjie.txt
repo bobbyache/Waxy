@@ -1,4 +1,4 @@
-﻿GET http://www.wavescape.co.za/tools/webcams/kommetjie-open-coast.html HTTP/1.1
+﻿GET https://www.wavescape.co.za/tools/webcams/kommetjie.html HTTP/1.1
 Host: www.wavescape.co.za
 Connection: keep-alive
 Cache-Control: max-age=0
